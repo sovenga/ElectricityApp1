@@ -1,0 +1,23 @@
+﻿<Page
+    x:Class="ElectricityApp.AddMeterPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ElectricityApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid HorizontalAlignment="Left" Height="473" Margin="230,73,0,0" VerticalAlignment="Top" Width="840">
+            <TextBlock HorizontalAlignment="Left" Margin="40,131,0,0" TextWrapping="Wrap" Text="METER NUMBER" VerticalAlignment="Top" FontSize="20"/>
+            <TextBlock HorizontalAlignment="Left" Margin="40,183,0,0" TextWrapping="Wrap" Text="CURRENT UNITS" VerticalAlignment="Top" FontSize="20"/>
+            <TextBox x:Name="txtMeterNumber" HorizontalAlignment="Left" Margin="227,123,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Global User Interface" Width="295"/>
+            <TextBox x:Name="txtCurrentUnits" HorizontalAlignment="Left" Margin="227,175,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Global User Interface" Width="295"/>
+            <Button x:Name="btnSave" Content="SAVE" HorizontalAlignment="Left" Margin="345,260,0,0" VerticalAlignment="Top" Width="180" Click="btnSave_Click" FontFamily="Global User Interface"/>
+            <TextBlock HorizontalAlignment="Left" Margin="156,46,0,0" TextWrapping="Wrap" Text="ADD YOUR METER BOX" VerticalAlignment="Top" FontSize="36" Width="413" FontWeight="Bold" FontStyle="Italic"/>
+            <Button Content="BACK" HorizontalAlignment="Left" Margin="7,7,0,0" VerticalAlignment="Top" Height="48" Width="98" Click="Button_Click"/>
+            <HyperlinkButton x:Name="linkRemoveMeters" Content="REMOVE ALL METER BOXES" HorizontalAlignment="Left" Margin="40,264,0,0" VerticalAlignment="Top" Click="linkRemoveMeters_Click"/>
+        </Grid>
+
+    </Grid>
+</Page>
