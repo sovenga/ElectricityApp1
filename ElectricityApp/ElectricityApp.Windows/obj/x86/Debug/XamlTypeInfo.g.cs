@@ -124,7 +124,7 @@ namespace ElectricityApp.ElectricityApp_Windows_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[14];
+            _typeNameTable = new string[15];
             _typeNameTable[0] = "ElectricityApp.AddAppliancePage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
@@ -136,11 +136,12 @@ namespace ElectricityApp.ElectricityApp_Windows_XamlTypeInfo
             _typeNameTable[8] = "String";
             _typeNameTable[9] = "ElectricityApp.RegisterPage";
             _typeNameTable[10] = "ElectricityApp.RemoveUserPage";
-            _typeNameTable[11] = "ElectricityApp.ViewAppliances";
-            _typeNameTable[12] = "ElectricityApp.ViewPage";
-            _typeNameTable[13] = "ElectricityApp.WelcomePage";
+            _typeNameTable[11] = "ElectricityApp.UnitsPage";
+            _typeNameTable[12] = "ElectricityApp.ViewAppliances";
+            _typeNameTable[13] = "ElectricityApp.ViewPage";
+            _typeNameTable[14] = "ElectricityApp.WelcomePage";
 
-            _typeTable = new global::System.Type[14];
+            _typeTable = new global::System.Type[15];
             _typeTable[0] = typeof(global::ElectricityApp.AddAppliancePage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
@@ -152,9 +153,10 @@ namespace ElectricityApp.ElectricityApp_Windows_XamlTypeInfo
             _typeTable[8] = typeof(global::System.String);
             _typeTable[9] = typeof(global::ElectricityApp.RegisterPage);
             _typeTable[10] = typeof(global::ElectricityApp.RemoveUserPage);
-            _typeTable[11] = typeof(global::ElectricityApp.ViewAppliances);
-            _typeTable[12] = typeof(global::ElectricityApp.ViewPage);
-            _typeTable[13] = typeof(global::ElectricityApp.WelcomePage);
+            _typeTable[11] = typeof(global::ElectricityApp.UnitsPage);
+            _typeTable[12] = typeof(global::ElectricityApp.ViewAppliances);
+            _typeTable[13] = typeof(global::ElectricityApp.ViewPage);
+            _typeTable[14] = typeof(global::ElectricityApp.WelcomePage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -197,9 +199,10 @@ namespace ElectricityApp.ElectricityApp_Windows_XamlTypeInfo
         private object Activate_7_MainPage() { return new global::ElectricityApp.MainPage(); }
         private object Activate_9_RegisterPage() { return new global::ElectricityApp.RegisterPage(); }
         private object Activate_10_RemoveUserPage() { return new global::ElectricityApp.RemoveUserPage(); }
-        private object Activate_11_ViewAppliances() { return new global::ElectricityApp.ViewAppliances(); }
-        private object Activate_12_ViewPage() { return new global::ElectricityApp.ViewPage(); }
-        private object Activate_13_WelcomePage() { return new global::ElectricityApp.WelcomePage(); }
+        private object Activate_11_UnitsPage() { return new global::ElectricityApp.UnitsPage(); }
+        private object Activate_12_ViewAppliances() { return new global::ElectricityApp.ViewAppliances(); }
+        private object Activate_13_ViewPage() { return new global::ElectricityApp.ViewPage(); }
+        private object Activate_14_WelcomePage() { return new global::ElectricityApp.WelcomePage(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -280,23 +283,30 @@ namespace ElectricityApp.ElectricityApp_Windows_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 11:   //  ElectricityApp.ViewAppliances
+            case 11:   //  ElectricityApp.UnitsPage
                 userType = new global::ElectricityApp.ElectricityApp_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_11_ViewAppliances;
+                userType.Activator = Activate_11_UnitsPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 12:   //  ElectricityApp.ViewPage
+            case 12:   //  ElectricityApp.ViewAppliances
                 userType = new global::ElectricityApp.ElectricityApp_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_12_ViewPage;
+                userType.Activator = Activate_12_ViewAppliances;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 13:   //  ElectricityApp.WelcomePage
+            case 13:   //  ElectricityApp.ViewPage
                 userType = new global::ElectricityApp.ElectricityApp_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_13_WelcomePage;
+                userType.Activator = Activate_13_ViewPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 14:   //  ElectricityApp.WelcomePage
+                userType = new global::ElectricityApp.ElectricityApp_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_14_WelcomePage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -654,7 +664,6 @@ namespace ElectricityApp.ElectricityApp_Windows_XamlTypeInfo
         }
     }
 }
-
 
 
 

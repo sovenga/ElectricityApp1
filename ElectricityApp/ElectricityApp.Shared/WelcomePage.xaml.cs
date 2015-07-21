@@ -48,7 +48,7 @@ namespace ElectricityApp
 
         private void linkView_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(ViewAppliances));
+            this.Frame.Navigate(typeof(UnitsPage));
         }
         private async void messageBox(string msg)
         {
@@ -81,7 +81,7 @@ namespace ElectricityApp
 
         private void HyperlinkButton_Click_2(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(ViewAppliances));
+            this.Frame.Navigate(typeof(UnitsPage));
         }
 
         private void linkDropHistory_Click(object sender, RoutedEventArgs e)

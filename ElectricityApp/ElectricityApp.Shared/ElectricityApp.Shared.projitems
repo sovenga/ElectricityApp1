@@ -48,6 +48,9 @@
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)SQLite.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)SQLiteAsync.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UnitsPage.xaml.cs">
+      <DependentUpon>UnitsPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)ViewAppliances.xaml.cs">
       <DependentUpon>ViewAppliances.xaml</DependentUpon>
     </Compile>
@@ -101,6 +104,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="$(MSBuildThisFileDirectory)UnitsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="$(MSBuildThisFileDirectory)ViewAppliances.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -113,5 +120,21 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)Assets\appliances.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\electricity.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\electricity1.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\electricity2.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\electricity3.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\electricity4.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\image.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\image1.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\image2.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\image34.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\image4.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\image5.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\image6.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\School.png" />
   </ItemGroup>
 </Project>

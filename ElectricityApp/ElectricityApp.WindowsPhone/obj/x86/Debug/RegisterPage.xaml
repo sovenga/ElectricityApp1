@@ -7,17 +7,34 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Grid HorizontalAlignment="Left" Height="618" Margin="64,51,0,0" VerticalAlignment="Top" Width="1045">
-            <TextBlock HorizontalAlignment="Left" Margin="205,10,0,0" TextWrapping="Wrap" Text="ELECTRICITY UNITS CALCULATOR" VerticalAlignment="Top" FontSize="36" Width="588" FontWeight="Bold"/>
-            <TextBlock HorizontalAlignment="Left" Margin="90,126,0,0" TextWrapping="Wrap" Text="Email" VerticalAlignment="Top" FontSize="22"/>
+    <Grid>
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="Assets/image.jpg"/>
+        </Grid.Background>
+        <Grid HorizontalAlignment="Left" Height="618" Margin="64,51,0,0" VerticalAlignment="Top" Width="793">
+            <TextBlock HorizontalAlignment="Left" Margin="120,10,0,0" TextWrapping="Wrap" Text="ELECTRICITY UNITS CALCULATOR" VerticalAlignment="Top" FontSize="36" Width="588" FontWeight="Bold" Foreground="#FF151414"/>
+            <TextBlock HorizontalAlignment="Left" Margin="90,126,0,0" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top" FontSize="22"/>
             <TextBlock HorizontalAlignment="Left" Margin="90,181,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" FontSize="22"/>
             <TextBlock HorizontalAlignment="Left" Margin="90,237,0,0" TextWrapping="Wrap" Text="Confirm" VerticalAlignment="Top" FontSize="22"/>
             <TextBox x:Name="txtUserName" HorizontalAlignment="Left" Margin="286,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.251,0.019" Width="298"/>
-            <TextBox x:Name="txtPassword" HorizontalAlignment="Left" Margin="286,175,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.251,0.019" Width="298"/>
-            <TextBox x:Name="txtConfirm" HorizontalAlignment="Left" Margin="286,231,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.251,0.019" Width="298"/>
-            <Button x:ConnectionId='1' x:Name="btnRegister" Content="REGISTER" HorizontalAlignment="Left" Margin="352,325,0,0" VerticalAlignment="Top"                          />
-            <Button x:ConnectionId='2' x:Name="btnBack" Content="BACK" HorizontalAlignment="Left" Margin="7,7,0,0" VerticalAlignment="Top"                      />
+            <Button x:ConnectionId='1' x:Name="btnRegister" Content="REGISTER" HorizontalAlignment="Left" Margin="283,297,0,0" VerticalAlignment="Top"                           Width="304">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black" Offset="0"/>
+                        <GradientStop Color="White" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button x:ConnectionId='2' x:Name="btnBack" Content="BACK" HorizontalAlignment="Left" Margin="7,7,0,0" VerticalAlignment="Top"                      >
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black" Offset="0"/>
+                        <GradientStop Color="White" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <PasswordBox x:Name="txtPassword" HorizontalAlignment="Left" Margin="286,175,0,0" VerticalAlignment="Top" Width="298"/>
+            <PasswordBox x:Name="txtConfirm" HorizontalAlignment="Left" Margin="286,231,0,0" VerticalAlignment="Top" Width="298"/>
         </Grid>
 
     </Grid>

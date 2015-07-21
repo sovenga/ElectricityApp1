@@ -15,6 +15,7 @@ using Windows.UI.Xaml.Navigation;
 using ElectricityApp;
 using ElectricityApp.model;
 using SQLite;
+using System.Diagnostics;
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace ElectricityApp
@@ -30,6 +31,8 @@ namespace ElectricityApp
         public MainPage()
         {
             this.InitializeComponent();
+         
+                
         }
 
         private void TextBlock_SelectionChanged(object sender, RoutedEventArgs e)
@@ -78,6 +81,11 @@ namespace ElectricityApp
         private void HyperlinkButton_Click_2(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(CheckUnitsPage));
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(UnitsPage));
         }
     }
 }

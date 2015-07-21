@@ -7,18 +7,36 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="339*"/>
+            <ColumnDefinition Width="344*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="Assets/image6.jpg"/>
+        </Grid.Background>
         <TextBlock HorizontalAlignment="Left" Margin="205,38,0,0" TextWrapping="Wrap" Text="ELECTRICITY UNITS CALCULATOR" VerticalAlignment="Top" FontSize="22" Width="355" FontWeight="Bold"/>
-        <Button x:ConnectionId='1' Content="BACK" HorizontalAlignment="Left" Margin="22,35,0,0" VerticalAlignment="Top"                     />
-        <Frame HorizontalAlignment="Left" Margin="25,75,0,0" VerticalAlignment="Top" Height="405" Width="706" RenderTransformOrigin="0.397,0.585">
-            <Grid HorizontalAlignment="Left" Height="366" Margin="36,23,0,0" VerticalAlignment="Top" Width="593">
-                <HyperlinkButton x:ConnectionId='2' Content="CHECK UNITS" HorizontalAlignment="Left" Margin="7,141,0,0" VerticalAlignment="Top" FontSize="22"                                />
-                <HyperlinkButton x:ConnectionId='3' x:Name="linkLogout" Content="LOGOUT" HorizontalAlignment="Left" Margin="7,269,0,0" VerticalAlignment="Top" FontSize="22"                         />
-                <HyperlinkButton x:ConnectionId='4' x:Name="linkremoveaccount" Content="Remove My Account" HorizontalAlignment="Left" Margin="7,168,0,0" VerticalAlignment="Top" FontSize="22"                                />
-                <HyperlinkButton x:ConnectionId='5' x:Name="linkDropTable" Content="REMOVE ALL APPLIANCES" HorizontalAlignment="Left" Margin="7,237,0,0" VerticalAlignment="Top" FontSize="22"                            />
-                <HyperlinkButton x:ConnectionId='6' Content="ADD APPLIANCES" HorizontalAlignment="Left" Margin="7,109,0,0" VerticalAlignment="Top" FontSize="22"                              />
-                <HyperlinkButton x:ConnectionId='7' x:Name="linkDropHistory" Content="DROP HISTORY" HorizontalAlignment="Left" Margin="7,205,0,0" VerticalAlignment="Top" FontWeight="Normal" FontSize="22"                              />
-                <HyperlinkButton x:ConnectionId='8' x:Name="linkAddMeter" Content="ADD METER BOX" HorizontalAlignment="Left" Margin="7,77,0,0" VerticalAlignment="Top" FontSize="22"                           />
+        <Button x:ConnectionId='1' Content="BACK" HorizontalAlignment="Left" Margin="22,7,0,0" VerticalAlignment="Top"                      Width="144" Height="66">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Frame HorizontalAlignment="Left" VerticalAlignment="Top" Height="607" Width="871" RenderTransformOrigin="0.397,0.585" Grid.ColumnSpan="2">
+            <Grid HorizontalAlignment="Left" Height="489" Margin="109,63,0,0" VerticalAlignment="Top" Width="762">
+                <HyperlinkButton x:ConnectionId='2' Content="CHECK UNITS" HorizontalAlignment="Left" Margin="209,176,0,0" VerticalAlignment="Top" FontSize="22"                                 FontWeight="Bold"/>
+                <HyperlinkButton x:ConnectionId='3' x:Name="linkLogout" Content="LOGOUT" HorizontalAlignment="Left" Margin="220,380,0,0" VerticalAlignment="Top" FontSize="22"                          FontWeight="Bold"/>
+                <HyperlinkButton x:ConnectionId='4' x:Name="linkremoveaccount" Content="Remove My Account" HorizontalAlignment="Left" Margin="209,229,0,0" VerticalAlignment="Top" FontSize="22"                                 FontWeight="Bold"/>
+                <HyperlinkButton x:ConnectionId='5' x:Name="linkDropTable" Content="REMOVE ALL APPLIANCES" HorizontalAlignment="Left" Margin="209,330,0,0" VerticalAlignment="Top" FontSize="22"                             FontWeight="Bold"/>
+                <HyperlinkButton x:ConnectionId='6' Content="ADD APPLIANCES" HorizontalAlignment="Left" Margin="209,117,0,0" VerticalAlignment="Top" FontSize="22"                               FontWeight="Bold"/>
+                <HyperlinkButton x:ConnectionId='7' x:Name="linkDropHistory" Content="DROP HISTORY" HorizontalAlignment="Left" Margin="209,278,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="22"                               RenderTransformOrigin="0.5,0.5">
+                    <HyperlinkButton.RenderTransform>
+                        <CompositeTransform SkewX="1.676" TranslateX="0.717"/>
+                    </HyperlinkButton.RenderTransform>
+                </HyperlinkButton>
+                <HyperlinkButton x:ConnectionId='8' x:Name="linkAddMeter" Content="ADD METER BOX" HorizontalAlignment="Left" Margin="209,66,0,0" VerticalAlignment="Top" FontSize="22"                            FontWeight="Bold"/>
             </Grid>
         </Frame>
 

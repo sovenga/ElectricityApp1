@@ -54,7 +54,7 @@ namespace ElectricityApp
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             //MeterBox box = null; 
-            
+            //txtAppliance1Hours.IsEnabled = true;
             
             appliancesModel = new AppliancesViewModel();
             try
@@ -276,6 +276,11 @@ namespace ElectricityApp
         private void btnHistory_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(HistoryPage));
+        }
+
+        private void txtAppliance2Hours_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
 
     }

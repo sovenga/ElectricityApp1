@@ -21,13 +21,13 @@
             <TextBlock x:Name="lblAppliance3" TextWrapping="Wrap" FontSize="24" Margin="0,205,425,111"/>
             <TextBlock x:Name="lblAppliance4" TextWrapping="Wrap" FontSize="24" Margin="0,253,425,63"/>
             <TextBlock x:Name="lblAppliance5" TextWrapping="Wrap" FontSize="24" Margin="0,306,425,10"/>
-            <TextBox x:Name="txtAppliance1Hours" HorizontalAlignment="Left" Margin="291,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="143"/>
+            <TextBox x:Name="txtAppliance1Hours" HorizontalAlignment="Left" Margin="262,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="243"/>
             <TextBlock x:Name="lblAppliance1_Copy" TextWrapping="Wrap" Text="APPLIANCE " FontSize="18" Margin="0,10,443,306" FontWeight="Bold"/>
             <TextBlock x:Name="lblAppliance1_Copy2" TextWrapping="Wrap" Text="HOURS USED" FontSize="18" Margin="284,10,210,306" FontWeight="Bold"/>
-            <TextBox x:Name="txtAppliance2Hours" HorizontalAlignment="Left" Margin="291,151,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="143"/>
-            <TextBox x:Name="txtAppliance3Hours" HorizontalAlignment="Left" Margin="291,205,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="143"/>
-            <TextBox x:Name="txtAppliance4Hours" HorizontalAlignment="Left" Margin="291,254,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="143"/>
-            <TextBox x:Name="txtAppliance5Hours" HorizontalAlignment="Left" Margin="291,306,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="143"/>
+            <TextBox x:Name="txtAppliance2Hours" HorizontalAlignment="Left" Margin="262,116,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="243" TextChanged="txtAppliance2Hours_TextChanged"/>
+            <TextBox x:Name="txtAppliance3Hours" HorizontalAlignment="Left" Margin="262,170,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="243"/>
+            <TextBox x:Name="txtAppliance4Hours" HorizontalAlignment="Left" Margin="262,219,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="243"/>
+            <TextBox x:Name="txtAppliance5Hours" HorizontalAlignment="Left" Margin="262,271,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="243"/>
             <HyperlinkButton Content="Refresh" HorizontalAlignment="Left" Margin="365,389,0,-79" VerticalAlignment="Top" Click="HyperlinkButton_Click"/>
             <TextBlock x:Name="lblAppliance1_Copy1" TextWrapping="Wrap" Text="CURRENT UNITS" FontSize="18" Margin="-291,-52,813,368" FontWeight="Bold"/>
         </Grid>

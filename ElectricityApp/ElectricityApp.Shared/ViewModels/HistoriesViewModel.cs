@@ -32,7 +32,7 @@ namespace ElectricityApp.ViewModels
                 {
                     var histories = new HistoryViewModel()
                     {
-                        ID = _history.ID,
+                        NUMBER = _history.number_of_appliances,
                         USED_UNITS = _history.used_watts,
                         REMAINING_UNITS = _history.remaining_watts,
                         DATE = _history.date

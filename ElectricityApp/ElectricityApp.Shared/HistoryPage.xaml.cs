@@ -66,7 +66,7 @@ namespace ElectricityApp
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(ViewAppliances));
+            this.Frame.Navigate(typeof(UnitsPage));
         }
 
         private void btnClearHistory_Click(object sender, RoutedEventArgs e)

@@ -71,15 +71,19 @@ namespace ElectricityApp.ViewModels
                 using (var db = new SQLite.SQLiteConnection(app.DBPath))
                 {
                     try
-                    {
-                       // rem = current - used;
-                        db.Execute("update meterbox set currentUnits = currentUnits -" + used);
-                        var query = db.Table<MeterBox>();
+                    {//db.Execute("update meterbox set currentUnits = currentUnits -" + used);
+                        var existing = db.Query<MeterBox>("select * from MeterBox").First();
+
+                        if (existing != null)
                         {
-                            CURRENT_UNITS = CURRENT_UNITS - used;
+                            existing.currentUnits = existing.currentUnits - used;
+                            db.RunInTransaction(() =>
+                            {
+                                db.Update(existing);
+                            }); 
                         }
-                        db.Update(query);
                     }
+
                     catch (Exception e)
                     {
 

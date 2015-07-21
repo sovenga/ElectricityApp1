@@ -1,3 +1,17 @@
+Assets\appliances.jpg
+Assets\electricity.jpg
+Assets\electricity1.png
+Assets\electricity2.jpg
+Assets\electricity3.png
+Assets\electricity4.png
+Assets\image.jpg
+Assets\image1.jpg
+Assets\image2.jpg
+Assets\image34.jpg
+Assets\image4.jpg
+Assets\image5.jpg
+Assets\image6.jpg
+Assets\School.png
 Assets\Logo.scale-100.png
 Assets\SmallLogo.scale-100.png
 Assets\SplashScreen.scale-100.png
@@ -12,6 +26,7 @@ HistoryPage.xbf
 MainPage.xbf
 RegisterPage.xbf
 RemoveUserPage.xbf
+UnitsPage.xbf
 ViewAppliances.xbf
 ViewPage.xbf
 WelcomePage.xbf
