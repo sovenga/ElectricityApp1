@@ -7,6 +7,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -74,16 +75,41 @@ namespace ElectricityApp
             this.Frame.Navigate(typeof(RemoveUserPage));
         }
 
-        private void linkLogout_Click(object sender, RoutedEventArgs e)
+        private async void linkLogout_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(MainPage));
+            var dialog = new MessageDialog("Do you want to logout?");
+            dialog.Commands.Add(new UICommand("Yes", new UICommandInvokedHandler(Commandhandler)));
+            dialog.Commands.Add(new UICommand("No", new UICommandInvokedHandler(Commandhandler)));
+            await dialog.ShowAsync();
         }
 
         private void HyperlinkButton_Click_2(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(UnitsPage));
         }
+        private void Commandhandler(IUICommand cmd)
+        {
+            HistoryViewModel myHistory = null;
+            var lable = cmd.Label;
+            myHistory = new HistoryViewModel();
+            switch (lable)
+            {
+                case "Yes":
 
+                    try
+                    {
+                        this.Frame.Navigate(typeof(MainPage));
+                    }
+                    catch (Exception ex)
+                    {
+                        //messageBox("error " + ex.Message);
+                    }
+                    break;
+                case "No":
+                    break;
+
+            }
+        }
         private void linkDropHistory_Click(object sender, RoutedEventArgs e)
         {
             HistoryViewModel history = new HistoryViewModel();

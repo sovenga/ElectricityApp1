@@ -53,6 +53,8 @@
       <RootProperty Name="RenderTransform" />
       <RootProperty Name="UseLayoutRounding" />
       <RootProperty Name="Height" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="Background" />
       <RootEvent Name="TextChanged" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Button">

@@ -8,6 +8,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -61,6 +62,7 @@ namespace ElectricityApp
         private async void messageBox(string msg)
         {
             var msgDlg = new Windows.UI.Popups.MessageDialog(msg);
+            
             await msgDlg.ShowAsync();
         }
 
@@ -68,20 +70,46 @@ namespace ElectricityApp
         {
             this.Frame.Navigate(typeof(UnitsPage));
         }
-
-        private void btnClearHistory_Click(object sender, RoutedEventArgs e)
-        {
-            myHistory = new HistoryViewModel();
-            try { 
-                myHistory.clearHistory();
-                messageBox("History has been cleared");
-                this.Frame.Navigate(typeof(HistoryPage));
-            }
-            catch (Exception ex)
-            {
-                messageBox("error " + ex.Message);
-            }
+        private void clear()
+        { 
             
+        }
+
+        private async void btnClearHistory_Click(object sender, RoutedEventArgs e)
+        {
+            var dialog = new MessageDialog("Do you really want to clear history?");
+            dialog.Commands.Add(new UICommand("Yes", new UICommandInvokedHandler(Commandhandler)));
+            dialog.Commands.Add(new UICommand("No", new UICommandInvokedHandler(Commandhandler)));
+            await dialog.ShowAsync();
+            
+        }
+
+        private  void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            
+        }
+        private void Commandhandler(IUICommand cmd)
+        {
+            var lable = cmd.Label;
+            myHistory = new HistoryViewModel();
+            switch(lable)
+            {
+                case "Yes":
+                    
+                    try { 
+                        myHistory.clearHistory();
+                        //messageBox("History has been cleared");
+                        this.Frame.Navigate(typeof(HistoryPage));
+                    }
+                    catch (Exception ex)
+                    {
+                        //messageBox("error " + ex.Message);
+                    }
+                    break;
+                case "No":
+                    break;
+
+            }
         }
     }
 }
