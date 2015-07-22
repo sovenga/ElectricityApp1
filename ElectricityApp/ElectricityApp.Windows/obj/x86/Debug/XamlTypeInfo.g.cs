@@ -666,6 +666,3 @@ namespace ElectricityApp.ElectricityApp_Windows_XamlTypeInfo
 }
 
 
-
-
-
