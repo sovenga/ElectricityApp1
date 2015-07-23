@@ -98,11 +98,13 @@ namespace ElectricityApp.ViewModels
         {
             using (var db = new SQLite.SQLiteConnection(app.DBPath))
             {
-                db.DropTable<Appliance>();
+                //db.CreateTable<Appliance>();
+                //db.DropTable<Appliance>();
                     var data = db.Table<Appliance>();
-                    if (db.Delete(data) > 0)
+                    var delete = db.Query<Appliance>("delete from appliance");
+                    if (db.Delete(delete) > 0)
                     {
-
+                        
                     }
                     else { 
                         

@@ -13,30 +13,21 @@
             <ColumnDefinition Width="344*"/>
         </Grid.ColumnDefinitions>
         <Grid.Background>
-            <ImageBrush Stretch="Fill" ImageSource="Assets/image6.jpg"/>
+            <ImageBrush ImageSource="Assets/image6.jpg" Stretch="UniformToFill">
+                <ImageBrush.RelativeTransform>
+                    <CompositeTransform CenterY="0.5" CenterX="0.5" Rotation="270"/>
+                </ImageBrush.RelativeTransform>
+            </ImageBrush>
         </Grid.Background>
         <TextBlock HorizontalAlignment="Left" Margin="205,38,0,0" TextWrapping="Wrap" Text="ELECTRICITY UNITS CALCULATOR" VerticalAlignment="Top" FontSize="22" Width="355" FontWeight="Bold"/>
-        <Button Content="BACK" HorizontalAlignment="Left" Margin="22,7,0,0" VerticalAlignment="Top" Click="Button_Click" Width="144" Height="66">
-            <Button.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="Black" Offset="0"/>
-                    <GradientStop Color="White" Offset="1"/>
-                </LinearGradientBrush>
-            </Button.Background>
-        </Button>
-        <Frame HorizontalAlignment="Left" VerticalAlignment="Top" Height="607" Width="871" RenderTransformOrigin="0.397,0.585" Grid.ColumnSpan="2">
-            <Grid HorizontalAlignment="Left" Height="489" Margin="109,63,0,0" VerticalAlignment="Top" Width="762">
-                <HyperlinkButton Content="CHECK UNITS" HorizontalAlignment="Left" Margin="209,176,0,0" VerticalAlignment="Top" FontSize="22" Click="HyperlinkButton_Click_2" FontWeight="Bold"/>
-                <HyperlinkButton x:Name="linkLogout" Content="LOGOUT" HorizontalAlignment="Left" Margin="220,380,0,0" VerticalAlignment="Top" FontSize="22" Click="linkLogout_Click" FontWeight="Bold"/>
-                <HyperlinkButton x:Name="linkremoveaccount" Content="Remove My Account" HorizontalAlignment="Left" Margin="209,229,0,0" VerticalAlignment="Top" FontSize="22" Click="linkremoveaccount_Click" FontWeight="Bold"/>
-                <HyperlinkButton x:Name="linkDropTable" Content="REMOVE ALL APPLIANCES" HorizontalAlignment="Left" Margin="209,330,0,0" VerticalAlignment="Top" FontSize="22" Click="linkDropTable_Click" FontWeight="Bold"/>
-                <HyperlinkButton Content="ADD APPLIANCES" HorizontalAlignment="Left" Margin="209,117,0,0" VerticalAlignment="Top" FontSize="22" Click="HyperlinkButton_Click" FontWeight="Bold"/>
-                <HyperlinkButton x:Name="linkDropHistory" Content="DROP HISTORY" HorizontalAlignment="Left" Margin="209,278,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="22" Click="linkDropHistory_Click" RenderTransformOrigin="0.5,0.5">
-                    <HyperlinkButton.RenderTransform>
-                        <CompositeTransform SkewX="1.676" TranslateX="0.717"/>
-                    </HyperlinkButton.RenderTransform>
-                </HyperlinkButton>
-                <HyperlinkButton x:Name="linkAddMeter" Content="ADD METER BOX" HorizontalAlignment="Left" Margin="209,66,0,0" VerticalAlignment="Top" FontSize="22" Click="linkAddMeter_Click" FontWeight="Bold"/>
+        <Frame HorizontalAlignment="Left" VerticalAlignment="Top" Height="492" Width="561" RenderTransformOrigin="0.397,0.585" Navigated="Frame_Navigated" Margin="28,38,0,0">
+            <Grid HorizontalAlignment="Left" Height="451" VerticalAlignment="Top" Width="551">
+                <HyperlinkButton Content="CHECK UNITS" HorizontalAlignment="Left" Margin="45,160,0,0" VerticalAlignment="Top" FontSize="22" Click="HyperlinkButton_Click_2" FontWeight="Bold"/>
+                <HyperlinkButton x:Name="linkLogout" Content="LOGOUT" HorizontalAlignment="Left" Margin="45,313,0,0" VerticalAlignment="Top" FontSize="22" Click="linkLogout_Click" FontWeight="Bold"/>
+                <HyperlinkButton x:Name="linkremoveaccount" Content="REMOVE ACCOUNT" HorizontalAlignment="Left" Margin="45,210,0,0" VerticalAlignment="Top" FontSize="22" Click="linkremoveaccount_Click" FontWeight="Bold"/>
+                <HyperlinkButton x:Name="linkDropTable" Content="REMOVE ALL APPLIANCES" HorizontalAlignment="Left" Margin="45,263,0,0" VerticalAlignment="Top" FontSize="22" Click="linkDropTable_Click" FontWeight="Bold"/>
+                <HyperlinkButton Content="ADD APPLIANCES" HorizontalAlignment="Left" Margin="45,101,0,0" VerticalAlignment="Top" FontSize="22" Click="HyperlinkButton_Click" FontWeight="Bold"/>
+                <HyperlinkButton x:Name="linkAddMeter" Content="ADD METER BOX" HorizontalAlignment="Left" Margin="45,44,0,0" VerticalAlignment="Top" FontSize="22" Click="linkAddMeter_Click" FontWeight="Bold"/>
             </Grid>
         </Frame>
 

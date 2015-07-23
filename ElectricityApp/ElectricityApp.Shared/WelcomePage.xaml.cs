@@ -63,10 +63,13 @@ namespace ElectricityApp
             messageBox("All Appliances Removed");
         }
 
-        private void linkDropTable_Click(object sender, RoutedEventArgs e)
+        private async void linkDropTable_Click(object sender, RoutedEventArgs e)
         {
-            //appliance = new ApplianceViewModel();
-            //appliance.dropAppliancesTable();
+            var dialog = new MessageDialog("All appliances will be deleted, Continue?");
+            dialog.Commands.Add(new UICommand("Yes", new UICommandInvokedHandler(DropAppliancesCommandhandler)));
+            dialog.Commands.Add(new UICommand("No", new UICommandInvokedHandler(DropAppliancesCommandhandler)));
+            await dialog.ShowAsync();
+            
             //messageBox("Table Removed");
         }
 
@@ -110,6 +113,31 @@ namespace ElectricityApp
 
             }
         }
+        private void DropAppliancesCommandhandler(IUICommand cmd)
+        {
+            HistoryViewModel myHistory = null;
+            var lable = cmd.Label;
+            myHistory = new HistoryViewModel();
+            switch (lable)
+            {
+                case "Yes":
+
+                    try
+                    {
+                        appliance = new ApplianceViewModel();
+                        appliance.deleteAllAppliances();
+                        //this.Frame.Navigate(typeof(MainPage));
+                    }
+                    catch (Exception ex)
+                    {
+                        //messageBox("error " + ex.Message);
+                    }
+                    break;
+                case "No":
+                    break;
+
+            }
+        }
         private void linkDropHistory_Click(object sender, RoutedEventArgs e)
         {
             HistoryViewModel history = new HistoryViewModel();
@@ -120,6 +148,11 @@ namespace ElectricityApp
         private void linkAddMeter_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(AddMeterPage));
+        }
+
+        private void Frame_Navigated(object sender, NavigationEventArgs e)
+        {
+
         }
     }
 }

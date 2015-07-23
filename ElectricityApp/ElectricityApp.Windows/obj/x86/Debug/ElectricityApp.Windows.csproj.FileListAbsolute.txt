@@ -287,7 +287,6 @@ C:\Users\Sovenga\Documents\My Windows Project\ElectricityApp\ElectricityApp\Elec
 C:\Users\Sovenga\Documents\My Windows Project\ElectricityApp\ElectricityApp\ElectricityApp.Windows\obj\x86\Debug\MainPage.xaml
 C:\Users\Sovenga\Documents\My Windows Project\ElectricityApp\ElectricityApp\ElectricityApp.Windows\obj\x86\Debug\RegisterPage.xaml
 C:\Users\Sovenga\Documents\My Windows Project\ElectricityApp\ElectricityApp\ElectricityApp.Windows\obj\x86\Debug\RemoveUserPage.xaml
-C:\Users\Sovenga\Documents\My Windows Project\ElectricityApp\ElectricityApp\ElectricityApp.Windows\obj\x86\Debug\UnitsPage.xaml
 C:\Users\Sovenga\Documents\My Windows Project\ElectricityApp\ElectricityApp\ElectricityApp.Windows\obj\x86\Debug\ViewAppliances.xaml
 C:\Users\Sovenga\Documents\My Windows Project\ElectricityApp\ElectricityApp\ElectricityApp.Windows\obj\x86\Debug\ViewPage.xaml
 C:\Users\Sovenga\Documents\My Windows Project\ElectricityApp\ElectricityApp\ElectricityApp.Windows\obj\x86\Debug\WelcomePage.xaml
@@ -300,11 +299,12 @@ C:\Users\Sovenga\Documents\My Windows Project\ElectricityApp\ElectricityApp\Elec
 C:\Users\Sovenga\Documents\My Windows Project\ElectricityApp\ElectricityApp\ElectricityApp.Windows\obj\x86\Debug\MainPage.xbf
 C:\Users\Sovenga\Documents\My Windows Project\ElectricityApp\ElectricityApp\ElectricityApp.Windows\obj\x86\Debug\RegisterPage.xbf
 C:\Users\Sovenga\Documents\My Windows Project\ElectricityApp\ElectricityApp\ElectricityApp.Windows\obj\x86\Debug\RemoveUserPage.xbf
-C:\Users\Sovenga\Documents\My Windows Project\ElectricityApp\ElectricityApp\ElectricityApp.Windows\obj\x86\Debug\UnitsPage.xbf
 C:\Users\Sovenga\Documents\My Windows Project\ElectricityApp\ElectricityApp\ElectricityApp.Windows\obj\x86\Debug\ViewAppliances.xbf
 C:\Users\Sovenga\Documents\My Windows Project\ElectricityApp\ElectricityApp\ElectricityApp.Windows\obj\x86\Debug\ViewPage.xbf
 C:\Users\Sovenga\Documents\My Windows Project\ElectricityApp\ElectricityApp\ElectricityApp.Windows\obj\x86\Debug\WelcomePage.xbf
 C:\Users\Sovenga\Documents\My Windows Project\ElectricityApp\ElectricityApp\ElectricityApp.Windows\obj\x86\Debug\XamlSaveStateFile.xml
+C:\Users\Sovenga\Documents\My Windows Project\ElectricityApp\ElectricityApp\ElectricityApp.Windows\obj\x86\Debug\UnitsPage.xaml
+C:\Users\Sovenga\Documents\My Windows Project\ElectricityApp\ElectricityApp\ElectricityApp.Windows\obj\x86\Debug\UnitsPage.xbf
 C:\Users\Sovenga\Documents\My Windows Project\ElectricityApp\ElectricityApp\ElectricityApp.Windows\obj\x86\Debug\ElectricityApp.Windows.exe
 C:\Users\Sovenga\Documents\My Windows Project\ElectricityApp\ElectricityApp\ElectricityApp.Windows\obj\x86\Debug\ElectricityApp.Windows.pdb
 C:\Users\Sovenga\Documents\My Windows Project\ElectricityApp\ElectricityApp\ElectricityApp.Windows\obj\x86\Debug\ElectricityApp.Windows.csproj.GenerateResource.Cache
