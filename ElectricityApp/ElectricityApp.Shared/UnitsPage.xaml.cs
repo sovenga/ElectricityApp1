@@ -283,5 +283,10 @@ namespace ElectricityApp
         {
 
         }
+
+        private void btnBack1_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(WelcomePage));
+        }
     }
 }
