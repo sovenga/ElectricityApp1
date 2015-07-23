@@ -63,7 +63,7 @@
             <TextBlock x:Name="lblAppliance1_Copy" TextWrapping="Wrap" Text="APPLIANCE " FontSize="18" Margin="0,10,395,326" FontWeight="Bold"/>
             <TextBlock x:Name="lblAppliance1_Copy2" TextWrapping="Wrap" Text="HOURS USED" FontSize="18" Margin="394,10,59,326" FontWeight="Bold"/>
             <HyperlinkButton Content="Refresh" HorizontalAlignment="Left" Margin="465,457,-46,-158" VerticalAlignment="Top" Click="HyperlinkButton_Click" Background="Transparent" Width="245" FontSize="36" Height="70"/>
-            <TextBlock x:Name="lblAppliance1_Copy1" TextWrapping="Wrap" Text="CURRENT UNITS" FontSize="18" Margin="-418,-90,928,426" FontWeight="Bold"/>
+            <TextBlock x:Name="lblAppliance1_Copy1" TextWrapping="Wrap" Text="CURRENT UNITS" FontSize="18" Margin="-419,-93,929,429" FontWeight="Bold"/>
             <TextBlock x:Name="lblAppliance1_Copy4" TextWrapping="Wrap" FontSize="24" Margin="-399,413,19,-97" FontWeight="Bold" Foreground="#FFD40F0F">
             	<Run Text="Please note that you can only calculate "/>
             	<Run Text="m"/>
@@ -72,6 +72,12 @@
             </TextBlock>
         </Grid>
         <TextBlock x:Name="lblRemainingUnits" HorizontalAlignment="Left" Margin="551,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" Width="805" Height="89"/>
+        <TextBlock x:Name="lblAppliance1_Copy5" TextWrapping="Wrap" Text="CURRENT UNITS" FontSize="18" Margin="-418,-90,1630,825" FontWeight="Bold"/>
+        <TextBlock x:Name="lblAppliance1_Copy6" TextWrapping="Wrap" Text="CURRENT UNITS" FontSize="18" Margin="-418,-90,1630,825" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Margin="51,157,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="32" Width="218" FontSize="20" FontFamily="Broadway">
+        	<Run Text="my "/>
+        	<Run Text="Appliances"/>
+        </TextBlock>
 
     </Grid>
 </Page>

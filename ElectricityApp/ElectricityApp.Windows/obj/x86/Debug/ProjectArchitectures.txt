@@ -1,1 +1,1 @@
-D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.Windows\ElectricityApp.Windows.csproj;x86
+C:\Users\Sovenga\Documents\My Windows Project\ElectricityApp\ElectricityApp\ElectricityApp.Windows\ElectricityApp.Windows.csproj;x86
