@@ -1,1 +1,0 @@
-D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.WindowsPhone\ElectricityApp.WindowsPhone.csproj;x86

@@ -11,7 +11,6 @@
         <Grid.Background>
             <ImageBrush ImageSource="Assets/image6.jpg" Stretch="Fill"/>
         </Grid.Background>
-        <Button x:Name="btnBack" Content="BACK" HorizontalAlignment="Left" Margin="14,7,0,0" VerticalAlignment="Top" Height="45" Width="108" Click="btnBack_Click"/>
         <TextBlock HorizontalAlignment="Left" Margin="175,10,0,0" TextWrapping="Wrap" Text="ELECTRICITY UNITS CALCULATOR" VerticalAlignment="Top" FontSize="18" Width="305" FontWeight="Bold" Height="21"/>
         <Button x:Name="btnContinue" Content="SEND TO CALCULATOR" HorizontalAlignment="Left" Margin="35,627,0,0" VerticalAlignment="Top" Height="44" Width="250" Click="Button_Click">
             <Button.Background>
@@ -39,8 +38,8 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <TextBox x:Name="txtCurrentUnits" HorizontalAlignment="Left" Margin="189,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="267"/>
-        <TextBlock x:Name="lblAppliance1_Copy3" TextWrapping="Wrap" Text="Units" FontSize="18" Margin="478,67,651,668" FontWeight="Bold"/>
+        <TextBox x:Name="txtCurrentUnits" HorizontalAlignment="Left" Margin="198,88,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="267"/>
+        <TextBlock x:Name="lblAppliance1_Copy3" TextWrapping="Wrap" Text="Units" FontSize="18" Margin="479,87,650,648" FontWeight="Bold"/>
         <Button x:Name="btnHistory" Content="VIEW HISTORY" HorizontalAlignment="Left" Margin="35,681,0,0" VerticalAlignment="Top" Height="44" Width="250" Click="btnHistory_Click">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -63,7 +62,7 @@
             <TextBlock x:Name="lblAppliance1_Copy" TextWrapping="Wrap" Text="APPLIANCE " FontSize="18" Margin="0,10,395,326" FontWeight="Bold"/>
             <TextBlock x:Name="lblAppliance1_Copy2" TextWrapping="Wrap" Text="HOURS USED" FontSize="18" Margin="394,10,59,326" FontWeight="Bold"/>
             <HyperlinkButton Content="Refresh" HorizontalAlignment="Left" Margin="465,457,-46,-158" VerticalAlignment="Top" Click="HyperlinkButton_Click" Background="Transparent" Width="245" FontSize="36" Height="70"/>
-            <TextBlock x:Name="lblAppliance1_Copy1" TextWrapping="Wrap" Text="CURRENT UNITS" FontSize="18" Margin="-418,-90,928,426" FontWeight="Bold"/>
+            <TextBlock x:Name="lblAppliance1_Copy1" TextWrapping="Wrap" Text="CURRENT UNITS" FontSize="18" Margin="-419,-71,929,407" FontWeight="Bold"/>
             <TextBlock x:Name="lblAppliance1_Copy4" TextWrapping="Wrap" FontSize="24" Margin="-399,413,19,-97" FontWeight="Bold" Foreground="#FFD40F0F">
             	<Run Text="Please note that you can only calculate "/>
             	<Run Text="m"/>
@@ -71,7 +70,14 @@
             	<Run Text="5 appliances at a time"/>
             </TextBlock>
         </Grid>
-        <TextBlock x:Name="lblRemainingUnits" HorizontalAlignment="Left" Margin="551,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" Width="805" Height="89"/>
+        <TextBlock x:Name="lblRemainingUnits" HorizontalAlignment="Left" Margin="529,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" Width="805" Height="89"/>
+        <TextBlock x:Name="lblAppliance1_Copy5" TextWrapping="Wrap" Text="CURRENT UNITS" FontSize="18" Margin="-418,-90,1630,825" FontWeight="Bold"/>
+        <TextBlock x:Name="lblAppliance1_Copy6" TextWrapping="Wrap" Text="CURRENT UNITS" FontSize="18" Margin="-418,-90,1630,825" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Margin="51,157,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="32" Width="218" FontSize="20" FontFamily="Broadway">
+        	<Run Text="my "/>
+        	<Run Text="Appliances"/>
+        </TextBlock>
+        <Button x:Name="btnBack1" Content="BACK" HorizontalAlignment="Left" Margin="7,11,0,0" VerticalAlignment="Top" Click="btnBack1_Click"/>
 
     </Grid>
 </Page>

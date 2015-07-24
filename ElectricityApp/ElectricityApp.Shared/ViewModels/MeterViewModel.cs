@@ -48,16 +48,38 @@ namespace ElectricityApp.ViewModels
             }
             public void addMeterBox(string meterBoxNumber, double current)
             {
+                
                 string result = string.Empty;
                 using (var db = new SQLite.SQLiteConnection(app.DBPath))
                     try
                     {
-                        int success = db.Insert(new MeterBox()
+                        db.CreateTable<MeterBox>();
+                        int success1 = db.Insert(new MeterBox()
                         {
                             ID = 0,
                             meterBoxNumber = meterBoxNumber,
                             currentUnits = current
                         });
+                        var existing = db.Query<MeterBox>("select * from MeterBox").First();
+                        if (existing == null)
+                        {
+                                int success = db.Insert(new MeterBox()
+                            {
+                                ID = 0,
+                                meterBoxNumber = meterBoxNumber,
+                                currentUnits = current
+                            });
+                        }
+                        else if(existing != null)
+                        {
+                            existing.meterBoxNumber = meterBoxNumber;
+                            existing.currentUnits = current;
+                            db.RunInTransaction(() =>
+                            {
+                                db.Update(existing);
+                            });
+                        }
+                  
                     }
                     catch (Exception e)
                     {
