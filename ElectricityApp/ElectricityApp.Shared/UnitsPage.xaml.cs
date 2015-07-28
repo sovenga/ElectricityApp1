@@ -117,10 +117,16 @@ namespace ElectricityApp
             appliance3Watts = 0.0, appliance4Watts = 0.0, appliance5Watts = 0.0;
             string[] applianceNames;
 
+            
             applianceNames = new string[sel.Count()];
             txtAppliance1Hours.Text = "0"; txtAppliance2Hours.Text = "0"; txtAppliance3Hours.Text = "0"; txtAppliance4Hours.Text = "0"; txtAppliance5Hours.Text = "0";
             string txtAppliance1 = "";
             this.calculatorGrid.Visibility = Visibility.Visible;
+            txtAppliance1Hours.IsEnabled = false;
+            txtAppliance2Hours.IsEnabled = false;
+            txtAppliance3Hours.IsEnabled = false;
+            txtAppliance4Hours.IsEnabled = false;
+            txtAppliance5Hours.IsEnabled = false;
             try
             {
                 string appliance2 = listView.Items[0].ToString();
@@ -133,6 +139,7 @@ namespace ElectricityApp
                 {
                     if (applianceNames.Count() > x)
                     {
+                        txtAppliance1Hours.IsEnabled = true;
                         string myNumbers = "";
                         myNumbers = applianceNames[0];
                         myNumbers = myNumbers.Substring(0, myNumbers.IndexOf('#'));
@@ -150,6 +157,7 @@ namespace ElectricityApp
 
                     if (applianceNames.Count() > x + 1)
                     {
+                        txtAppliance2Hours.IsEnabled = true;
                         string myNumbers = "";
                         myNumbers = applianceNames[1];
                         myNumbers = myNumbers.Substring(0, myNumbers.IndexOf('#'));
@@ -167,6 +175,7 @@ namespace ElectricityApp
 
                     if (applianceNames.Count() > x + 1 + 1)
                     {
+                        txtAppliance3Hours.IsEnabled = true;
                         string myNumberss = "";
                         myNumberss = applianceNames[2];
                         myNumberss = myNumberss.Substring(0, myNumberss.IndexOf('#'));
@@ -183,6 +192,7 @@ namespace ElectricityApp
 
                     if (applianceNames.Count() > x + 1 + 1 + 1)
                     {
+                        txtAppliance4Hours.IsEnabled = true;
                         string myNumbers = "";
                         myNumbers = applianceNames[3];
                         myNumbers = myNumbers.Substring(0, myNumbers.IndexOf('#'));
@@ -200,6 +210,7 @@ namespace ElectricityApp
 
                     if (applianceNames.Count() > x + 1 + 1 + 1 + 1)
                     {
+                        txtAppliance5Hours.IsEnabled = true;
                         string myNumbers = "";
                         myNumbers = applianceNames[4];
                         myNumbers = myNumbers.Substring(0, myNumbers.IndexOf('#'));
