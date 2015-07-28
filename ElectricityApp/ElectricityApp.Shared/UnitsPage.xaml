@@ -20,17 +20,9 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Button x:Name="btnCalculate" Content="CALCULATE UNITS&#x9;" HorizontalAlignment="Left" Margin="867,681,0,0" VerticalAlignment="Top" Height="44" Width="244" Click="btnCalculate_Click">
-            <Button.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="Black" Offset="0"/>
-                    <GradientStop Color="White" Offset="1"/>
-                </LinearGradientBrush>
-            </Button.Background>
-        </Button>
         <TextBox x:Name="txtCurrentUnits" HorizontalAlignment="Left" Margin="193,54,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="267"/>
         <TextBlock x:Name="lblAppliance1_Copy3" TextWrapping="Wrap" Text="Units" FontSize="18" Margin="479,62,650,673" FontWeight="Bold"/>
-        <Button x:Name="btnHistory" Content="VIEW HISTORY" HorizontalAlignment="Left" Margin="35,681,0,0" VerticalAlignment="Top" Height="44" Width="250" Click="btnHistory_Click">
+        <Button x:Name="btnHistory" Content="VIEW HISTORY" HorizontalAlignment="Left" Margin="315,627,0,0" VerticalAlignment="Top" Height="44" Width="250" Click="btnHistory_Click">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black" Offset="0"/>
@@ -38,7 +30,7 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Grid x:Name="calculatorGrid" HorizontalAlignment="Left" Height="369" Margin="444,157,0,0" VerticalAlignment="Top" Width="664">
+        <Grid x:Name="calculatorGrid" HorizontalAlignment="Left" Height="369" Margin="331,100,0,0" VerticalAlignment="Top" Width="664">
             <TextBlock x:Name="lblAppliance1" TextWrapping="Wrap" FontSize="24" Margin="10,42,368,294" SelectionChanged="lblAppliance1_SelectionChanged"/>
             <TextBlock x:Name="lblAppliance2" TextWrapping="Wrap" FontSize="24" Margin="10,93,399,243"/>
             <TextBlock x:Name="lblAppliance3" TextWrapping="Wrap" FontSize="24" Margin="10,147,399,189"/>
@@ -59,6 +51,14 @@
             	<Run Text="aximum of "/>
             	<Run Text="5 appliances at a time"/>
             </TextBlock>
+            <Button x:Name="btnCalculate" Content="CALCULATE UNITS&#x9;" HorizontalAlignment="Left" Margin="364,300,0,0" VerticalAlignment="Top" Height="44" Width="244" Click="btnCalculate_Click">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black" Offset="0"/>
+                        <GradientStop Color="White" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
         </Grid>
         <TextBlock x:Name="lblRemainingUnits" HorizontalAlignment="Left" Margin="529,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" Width="805" Height="89"/>
         <TextBlock x:Name="lblAppliance1_Copy5" TextWrapping="Wrap" Text="CURRENT UNITS" FontSize="18" Margin="-418,-90,1630,825" FontWeight="Bold"/>

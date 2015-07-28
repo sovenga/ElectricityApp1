@@ -15,6 +15,14 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using System.Windows;
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Windows;
+
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -56,7 +64,7 @@ namespace ElectricityApp
         {
             //MeterBox box = null; 
             //txtAppliance1Hours.IsEnabled = true;
-            
+            this.calculatorGrid.Visibility = Visibility.Collapsed;
             appliancesModel = new AppliancesViewModel();
             try
             {  
@@ -112,7 +120,7 @@ namespace ElectricityApp
             applianceNames = new string[sel.Count()];
             txtAppliance1Hours.Text = "0"; txtAppliance2Hours.Text = "0"; txtAppliance3Hours.Text = "0"; txtAppliance4Hours.Text = "0"; txtAppliance5Hours.Text = "0";
             string txtAppliance1 = "";
-            
+            this.calculatorGrid.Visibility = Visibility.Visible;
             try
             {
                 string appliance2 = listView.Items[0].ToString();

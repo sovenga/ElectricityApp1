@@ -20,13 +20,13 @@
     <AppXManifest Include="D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.Windows\bin\x86\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-07-28T07:14:40.779</Modified>
+      <Modified>2015-07-28T08:05:08.335</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.Windows\bin\x86\Debug\ElectricityApp.Windows.exe">
       <PackagePath>ElectricityApp.Windows.exe</PackagePath>
-      <Modified>2015-07-28T07:20:06.128</Modified>
+      <Modified>2015-07-28T08:09:07.177</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\SQLite.WinRT81\3.8.10.2\Redist\Debug\x86\sqlite3.dll">
       <PackagePath>sqlite3.dll</PackagePath>
@@ -146,7 +146,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.Windows\bin\x86\Debug\UnitsPage.xbf">
       <PackagePath>UnitsPage.xbf</PackagePath>
-      <Modified>2015-07-28T07:20:05.869</Modified>
+      <Modified>2015-07-28T08:09:06.916</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.Windows\bin\x86\Debug\ViewAppliances.xbf">
       <PackagePath>ViewAppliances.xbf</PackagePath>
@@ -166,7 +166,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.Windows\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-07-28T07:14:40.498</Modified>
+      <Modified>2015-07-28T08:05:08.179</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
