@@ -13,7 +13,7 @@
             <ColumnDefinition Width="344*"/>
         </Grid.ColumnDefinitions>
         <Grid.Background>
-            <ImageBrush ImageSource="Assets/image6.jpg" Stretch="UniformToFill">
+            <ImageBrush ImageSource="Assets/image8.JPG" Stretch="UniformToFill">
                 <ImageBrush.RelativeTransform>
                     <CompositeTransform CenterY="0.5" CenterX="0.5" Rotation="270"/>
                 </ImageBrush.RelativeTransform>
@@ -22,12 +22,12 @@
         <TextBlock HorizontalAlignment="Left" Margin="205,38,0,0" TextWrapping="Wrap" Text="ELECTRICITY UNITS CALCULATOR" VerticalAlignment="Top" FontSize="22" Width="355" FontWeight="Bold"/>
         <Frame x:ConnectionId='1' HorizontalAlignment="Left" VerticalAlignment="Top" Height="492" Width="561" RenderTransformOrigin="0.397,0.585"                             Margin="28,38,0,0">
             <Grid HorizontalAlignment="Left" Height="451" VerticalAlignment="Top" Width="551">
-                <HyperlinkButton x:ConnectionId='2' Content="CHECK UNITS" HorizontalAlignment="Left" Margin="45,160,0,0" VerticalAlignment="Top" FontSize="22"                                 FontWeight="Bold"/>
-                <HyperlinkButton x:ConnectionId='3' x:Name="linkLogout" Content="LOGOUT" HorizontalAlignment="Left" Margin="45,313,0,0" VerticalAlignment="Top" FontSize="22"                          FontWeight="Bold"/>
+                <HyperlinkButton x:ConnectionId='2' Content="CHECK UNITS" HorizontalAlignment="Left" Margin="45,99,0,0" VerticalAlignment="Top" FontSize="22"                                 FontWeight="Bold"/>
+                <HyperlinkButton x:ConnectionId='3' x:Name="linkLogout" Content="LOGOUT" HorizontalAlignment="Left" Margin="45,284,0,0" VerticalAlignment="Top" FontSize="22"                          FontWeight="Bold"/>
                 <HyperlinkButton x:ConnectionId='4' x:Name="linkremoveaccount" Content="REMOVE ACCOUNT" HorizontalAlignment="Left" Margin="45,210,0,0" VerticalAlignment="Top" FontSize="22"                                 FontWeight="Bold"/>
-                <HyperlinkButton x:ConnectionId='5' x:Name="linkDropTable" Content="REMOVE ALL APPLIANCES" HorizontalAlignment="Left" Margin="45,263,0,0" VerticalAlignment="Top" FontSize="22"                             FontWeight="Bold"/>
-                <HyperlinkButton x:ConnectionId='6' Content="ADD APPLIANCES" HorizontalAlignment="Left" Margin="45,101,0,0" VerticalAlignment="Top" FontSize="22"                               FontWeight="Bold"/>
-                <HyperlinkButton x:ConnectionId='7' x:Name="linkAddMeter" Content="ADD METER BOX" HorizontalAlignment="Left" Margin="45,44,0,0" VerticalAlignment="Top" FontSize="22"                            FontWeight="Bold"/>
+                <HyperlinkButton x:ConnectionId='5' x:Name="linkDropTable" Content="REMOVE ALL APPLIANCES" HorizontalAlignment="Left" Margin="45,247,0,0" VerticalAlignment="Top" FontSize="22"                             FontWeight="Bold"/>
+                <HyperlinkButton x:ConnectionId='6' Content="ADD APPLIANCES" HorizontalAlignment="Left" Margin="45,173,0,0" VerticalAlignment="Top" FontSize="22"                               FontWeight="Bold"/>
+                <HyperlinkButton x:ConnectionId='7' x:Name="linkAddMeter" Content="ADD METER BOX" HorizontalAlignment="Left" Margin="45,136,0,0" VerticalAlignment="Top" FontSize="22"                            FontWeight="Bold"/>
             </Grid>
         </Frame>
 

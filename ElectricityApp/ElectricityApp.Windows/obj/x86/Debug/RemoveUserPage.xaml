@@ -9,7 +9,7 @@
 
     <Grid>
         <Grid.Background>
-            <ImageBrush Stretch="Fill" ImageSource="Assets/image4.jpg"/>
+            <ImageBrush Stretch="Fill" ImageSource="Assets/image8.JPG"/>
         </Grid.Background>
         <Grid HorizontalAlignment="Left" Height="394" Margin="57,49,0,0" VerticalAlignment="Top" Width="679">
             <TextBlock HorizontalAlignment="Left" Margin="10,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="357" Height="39" FontSize="24" FontWeight="Bold" Foreground="#FF111010">
@@ -17,7 +17,14 @@
     			<Run Text="YOUR "/>
     			<Run Text="USERNAME"/>
             </TextBlock>
-            <TextBlock HorizontalAlignment="Left" Margin="132,18,0,0" TextWrapping="Wrap" Text="ELECTRICITY UNITS CALCULATOR" VerticalAlignment="Top" FontSize="20" Width="398" FontWeight="Bold" Foreground="#FF111010"/>
+            <TextBlock HorizontalAlignment="Left" Margin="132,18,0,0" TextWrapping="Wrap" Text="ELECTRICITY UNITS CALCULATOR" VerticalAlignment="Top" FontSize="20" Width="383" FontWeight="Bold" Height="63">
+                <TextBlock.Foreground>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black" Offset="0"/>
+                        <GradientStop Color="#FFF8F9FB" Offset="1"/>
+                    </LinearGradientBrush>
+                </TextBlock.Foreground>
+            </TextBlock>
             <TextBox x:Name="txtUserName" HorizontalAlignment="Left" Margin="386,215,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="283" Height="49">
                 <TextBox.Foreground>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -32,15 +39,15 @@
                     </LinearGradientBrush>
                 </TextBox.Background>
             </TextBox>
-            <TextBlock HorizontalAlignment="Left" Margin="10,340,0,0" TextWrapping="Wrap" Text="Please note that the user will be removed" VerticalAlignment="Top" Height="32" Width="269" FontSize="14">
+            <TextBlock HorizontalAlignment="Left" Margin="132,308,0,0" TextWrapping="Wrap" Text="Please note that the user will be removed" VerticalAlignment="Top" Height="32" Width="292" FontSize="14" FontWeight="Bold">
                 <TextBlock.Foreground>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                         <GradientStop Color="Black" Offset="0"/>
-                        <GradientStop Color="#FFF10832" Offset="1"/>
+                        <GradientStop Color="#FFB80424" Offset="1"/>
                     </LinearGradientBrush>
                 </TextBlock.Foreground>
             </TextBlock>
-            <Button x:ConnectionId='1' x:Name="btnRemoveUser" Content="Remove User" HorizontalAlignment="Left" Margin="484,328,0,0" VerticalAlignment="Top" Width="135"                        >
+            <Button x:ConnectionId='1' x:Name="btnRemoveUser" Content="Remove User" HorizontalAlignment="Left" Margin="546,283,0,0" VerticalAlignment="Top" Width="126"                        >
                 <Button.Background>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                         <GradientStop Color="Black" Offset="0"/>
@@ -54,16 +61,10 @@
                     </LinearGradientBrush>
                 </Button.Foreground>
             </Button>
-            <Button x:ConnectionId='2' x:Name="btnBack" Content="BACK" HorizontalAlignment="Left" Margin="7,7,0,0" VerticalAlignment="Top"                     />
-            <TextBlock HorizontalAlignment="Left" Margin="69,150,0,0" TextWrapping="Wrap" Text="Remove Your Account??" VerticalAlignment="Top" FontSize="20" Width="398" FontWeight="Bold" Foreground="#FF111010"/>
-            <HyperlinkButton x:ConnectionId='3' Content="Remove All Users" HorizontalAlignment="Left" Margin="315,328,0,0" VerticalAlignment="Top"                               Foreground="#FF111010">
-                <HyperlinkButton.Background>
-                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                        <GradientStop Color="Black" Offset="0"/>
-                        <GradientStop Color="White" Offset="1"/>
-                    </LinearGradientBrush>
-                </HyperlinkButton.Background>
-            </HyperlinkButton>
+            <Button x:ConnectionId='2' x:Name="btnBack" Content="BACK" HorizontalAlignment="Left" Margin="-57,-47,0,0" VerticalAlignment="Top"                     />
+            <TextBlock HorizontalAlignment="Left" Margin="69,150,0,0" TextWrapping="Wrap" Text="Remove Your Account??" VerticalAlignment="Top" FontSize="20" Width="232" FontWeight="Bold" Foreground="#FF111010"/>
+            <TextBlock x:Name="lblDeleted" HorizontalAlignment="Left" Margin="158,81,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="369" Height="51" FontSize="24" FontWeight="Bold" Foreground="#FFF50808"/>
+            <Button x:ConnectionId='3' x:Name="btnClear" Content="Clear" HorizontalAlignment="Left" Margin="561,143,0,0" VerticalAlignment="Top" Width="111"                        Foreground="White"/>
         </Grid>
 
     </Grid>

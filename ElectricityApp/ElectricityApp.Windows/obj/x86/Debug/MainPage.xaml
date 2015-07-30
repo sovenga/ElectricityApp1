@@ -9,7 +9,7 @@
 
     <Grid x:Name="PageGrid">
         <Grid.Background>
-            <ImageBrush Stretch="Fill" ImageSource="Assets/image6.jpg"/>
+            <ImageBrush Stretch="Fill" ImageSource="Assets/image8.JPG"/>
         </Grid.Background>
         <Grid x:Name="logingrid" Margin="167,10,0,0" HorizontalAlignment="Left" Width="696" Height="695" VerticalAlignment="Top">
             <Grid.Background>

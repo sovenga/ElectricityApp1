@@ -20,13 +20,13 @@
     <AppXManifest Include="D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.Windows\bin\x86\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-07-28T08:05:08.335</Modified>
+      <Modified>2015-07-30T07:21:18.193</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.Windows\bin\x86\Debug\ElectricityApp.Windows.exe">
       <PackagePath>ElectricityApp.Windows.exe</PackagePath>
-      <Modified>2015-07-28T09:12:17.460</Modified>
+      <Modified>2015-07-30T08:21:17.584</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\SQLite.WinRT81\3.8.10.2\Redist\Debug\x86\sqlite3.dll">
       <PackagePath>sqlite3.dll</PackagePath>
@@ -108,17 +108,21 @@
       <PackagePath>Assets\image6.jpg</PackagePath>
       <Modified>2015-07-21T09:23:16.347</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.Shared\Assets\image8.JPG">
+      <PackagePath>Assets\image8.JPG</PackagePath>
+      <Modified>2015-07-30T07:13:14.846</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.Windows\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
       <Modified>2015-07-28T07:14:39.719</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.Windows\bin\x86\Debug\AddAppliancePage.xbf">
       <PackagePath>AddAppliancePage.xbf</PackagePath>
-      <Modified>2015-07-28T07:14:39.721</Modified>
+      <Modified>2015-07-30T08:01:48.685</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.Windows\bin\x86\Debug\AddMeterPage.xbf">
       <PackagePath>AddMeterPage.xbf</PackagePath>
-      <Modified>2015-07-28T07:14:39.723</Modified>
+      <Modified>2015-07-30T08:01:48.686</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.Windows\bin\x86\Debug\CheckUnitsPage.xbf">
       <PackagePath>CheckUnitsPage.xbf</PackagePath>
@@ -126,27 +130,27 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.Windows\bin\x86\Debug\ForgotPasswordPage.xbf">
       <PackagePath>ForgotPasswordPage.xbf</PackagePath>
-      <Modified>2015-07-28T07:14:39.726</Modified>
+      <Modified>2015-07-30T08:01:48.686</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.Windows\bin\x86\Debug\HistoryPage.xbf">
       <PackagePath>HistoryPage.xbf</PackagePath>
-      <Modified>2015-07-28T07:14:39.728</Modified>
+      <Modified>2015-07-30T08:01:48.686</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.Windows\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2015-07-28T07:14:39.729</Modified>
+      <Modified>2015-07-30T08:01:48.687</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.Windows\bin\x86\Debug\RegisterPage.xbf">
       <PackagePath>RegisterPage.xbf</PackagePath>
-      <Modified>2015-07-28T07:14:39.731</Modified>
+      <Modified>2015-07-30T08:01:48.687</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.Windows\bin\x86\Debug\RemoveUserPage.xbf">
       <PackagePath>RemoveUserPage.xbf</PackagePath>
-      <Modified>2015-07-28T09:12:17.188</Modified>
+      <Modified>2015-07-30T08:01:48.689</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.Windows\bin\x86\Debug\UnitsPage.xbf">
       <PackagePath>UnitsPage.xbf</PackagePath>
-      <Modified>2015-07-28T09:12:17.190</Modified>
+      <Modified>2015-07-30T08:01:48.691</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.Windows\bin\x86\Debug\ViewAppliances.xbf">
       <PackagePath>ViewAppliances.xbf</PackagePath>
@@ -158,15 +162,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.Windows\bin\x86\Debug\WelcomePage.xbf">
       <PackagePath>WelcomePage.xbf</PackagePath>
-      <Modified>2015-07-28T07:14:39.741</Modified>
+      <Modified>2015-07-30T08:01:48.691</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.Windows\bin\x86\Debug\ElectricityApp.Windows.xr.xml">
       <PackagePath>ElectricityApp.Windows.xr.xml</PackagePath>
-      <Modified>2015-07-24T08:24:05.745</Modified>
+      <Modified>2015-07-30T07:23:44.669</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.Windows\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-07-28T08:05:08.179</Modified>
+      <Modified>2015-07-30T07:21:17.904</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

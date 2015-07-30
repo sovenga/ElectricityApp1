@@ -64,5 +64,10 @@ namespace ElectricityApp
             catch { messageBox("Error!!!! You have to enter the watts and the total number of appliance of that type"); }
         }
 
+        private void tblBack2_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(WelcomePage));
+        }
+
     }
 }

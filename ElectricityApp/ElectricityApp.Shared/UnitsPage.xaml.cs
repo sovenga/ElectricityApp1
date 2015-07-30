@@ -82,7 +82,7 @@ namespace ElectricityApp
                     }
                     else
                     {
-                        messageBox("No Units found in the Meter Box");
+                        messageBox("No Meter Box added, please add your meter box before");
                     }
                     
                 }
@@ -278,7 +278,7 @@ namespace ElectricityApp
             messageBox("Total consumed Units for selected appliances is : " + total_units + " units");
             }
             catch (Exception ex){
-                messageBox("Please check your text fields or "+ex.Message);
+                messageBox("Please check your text fields");
             }
 
         }

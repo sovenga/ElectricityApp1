@@ -135,6 +135,7 @@
     <Content Include="$(MSBuildThisFileDirectory)Assets\image4.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)Assets\image5.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)Assets\image6.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\image8.JPG" />
     <Content Include="$(MSBuildThisFileDirectory)Assets\School.png" />
   </ItemGroup>
 </Project>

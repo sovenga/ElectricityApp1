@@ -40,6 +40,7 @@ namespace ElectricityApp
             var dialog = new MessageDialog("Remove your account?");
             dialog.Commands.Add(new UICommand("Yes", new UICommandInvokedHandler(Commandhandler)));
             dialog.Commands.Add(new UICommand("No", new UICommandInvokedHandler(Commandhandler)));
+           
             await dialog.ShowAsync();
            
         }
@@ -62,19 +63,21 @@ namespace ElectricityApp
             {
                 case "Yes":
 
-                     try { 
-                    string username = txtUserName.Text;
-                    user = new UserViewModel();
-                    if (user.verify(username) != null)
-                    {
-                        user.removeUser(username);
-                        //messageBox("User has been removed");
+                     try 
+                     { 
+                        string username = txtUserName.Text;
+                        user = new UserViewModel();
+                        if (user.verify(username) != null)
+                        {
+                            user.removeUser(username);
 
-                        this.Frame.Navigate(typeof(MainPage));
-                    }
-                    /*else {
-                        messageBox("Error!!! ");
-                    }*/
+                            this.Frame.Navigate(typeof(MainPage));
+                        }
+                    else if(user.verify(username) == null)
+                        { 
+                            lblDeleted.Text = "Username not found";
+                        }
+        
                 }
                 catch
                 {
@@ -87,6 +90,11 @@ namespace ElectricityApp
                     break;
 
             }
+        }
+
+        private void btnClear_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(RemoveUserPage));
         }
     }
 }

@@ -80,6 +80,9 @@
     <AppxPackagedFile Include="D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.Shared\Assets\image6.jpg">
       <PackagePath>Assets\image6.jpg</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.Shared\Assets\image8.JPG">
+      <PackagePath>Assets\image8.JPG</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.Windows\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>

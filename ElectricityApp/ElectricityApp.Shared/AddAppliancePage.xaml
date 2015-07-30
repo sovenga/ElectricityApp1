@@ -9,9 +9,9 @@
 
     <Grid>
         <Grid.Background>
-            <ImageBrush Stretch="Fill" ImageSource="Assets/image5.jpg"/>
+            <ImageBrush Stretch="Fill" ImageSource="Assets/image8.JPG"/>
         </Grid.Background>
-        <Grid HorizontalAlignment="Left" Height="385" Margin="0,93,0,0" VerticalAlignment="Top" Width="627">
+        <Grid HorizontalAlignment="Left" Height="385" Margin="10,88,0,0" VerticalAlignment="Top" Width="627">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="35*"/>
                 <ColumnDefinition Width="22*"/>
@@ -29,18 +29,11 @@
                     </LinearGradientBrush>
                 </Button.Background>
             </Button>
-            <TextBox x:Name="txtNumberOfItems" HorizontalAlignment="Left" Margin="8.925,187,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="223" Grid.Column="1"/>
+            <TextBox x:Name="txtNumberOfItems" HorizontalAlignment="Left" Margin="365,187,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="252" Grid.ColumnSpan="2"/>
             <TextBlock HorizontalAlignment="Left" Margin="41,195,0,0" TextWrapping="Wrap" Text="NUMBER OF ITEMS OF SAME TYPE" VerticalAlignment="Top" FontSize="20" RenderTransformOrigin="0.51,2.619"/>
-            <Button Content="BACK" HorizontalAlignment="Left" Margin="0,-86,0,0" VerticalAlignment="Top" Width="206" Click="Button_Click" Foreground="{ThemeResource AppBarBackgroundThemeBrush}" Height="63">
-                <Button.Background>
-                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                        <GradientStop Color="Black" Offset="0"/>
-                        <GradientStop Color="White" Offset="1"/>
-                    </LinearGradientBrush>
-                </Button.Background>
-            </Button>
         </Grid>
         <TextBlock HorizontalAlignment="Left" Margin="355,25,0,0" TextWrapping="Wrap" Text="ELECTRICITY UNITS CALCULATOR" VerticalAlignment="Top" FontSize="36" Width="627" FontWeight="Bold" Height="63"/>
+        <Button x:Name="tblBack2" Content="BACK" HorizontalAlignment="Left" Margin="7,7,0,0" VerticalAlignment="Top" Height="42" Click="tblBack2_Click"/>
 
     </Grid>
 </Page>
