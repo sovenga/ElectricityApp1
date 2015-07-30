@@ -13,7 +13,7 @@
             <ColumnDefinition Width="344*"/>
         </Grid.ColumnDefinitions>
         <Grid.Background>
-            <ImageBrush ImageSource="Assets/image8.JPG" Stretch="UniformToFill">
+            <ImageBrush ImageSource="Assets/image8.JPG" Stretch="Uniform">
                 <ImageBrush.RelativeTransform>
                     <CompositeTransform CenterY="0.5" CenterX="0.5" Rotation="270"/>
                 </ImageBrush.RelativeTransform>
