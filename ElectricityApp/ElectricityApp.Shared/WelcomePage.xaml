@@ -13,9 +13,9 @@
             <ColumnDefinition Width="344*"/>
         </Grid.ColumnDefinitions>
         <Grid.Background>
-            <ImageBrush ImageSource="Assets/image8.JPG" Stretch="Uniform">
+            <ImageBrush ImageSource="Assets/image8.JPG">
                 <ImageBrush.RelativeTransform>
-                    <CompositeTransform CenterY="0.5" CenterX="0.5" Rotation="270"/>
+                    <CompositeTransform CenterY="0.5" CenterX="0.5" Rotation="360"/>
                 </ImageBrush.RelativeTransform>
             </ImageBrush>
         </Grid.Background>

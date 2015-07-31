@@ -64,7 +64,6 @@
             <Button x:ConnectionId='2' x:Name="btnBack" Content="BACK" HorizontalAlignment="Left" Margin="-57,-47,0,0" VerticalAlignment="Top"                     />
             <TextBlock HorizontalAlignment="Left" Margin="69,150,0,0" TextWrapping="Wrap" Text="Remove Your Account??" VerticalAlignment="Top" FontSize="20" Width="232" FontWeight="Bold" Foreground="#FF111010"/>
             <TextBlock x:Name="lblDeleted" HorizontalAlignment="Left" Margin="158,81,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="369" Height="51" FontSize="24" FontWeight="Bold" Foreground="#FFF50808"/>
-            <Button x:ConnectionId='3' x:Name="btnClear" Content="Clear" HorizontalAlignment="Left" Margin="561,143,0,0" VerticalAlignment="Top" Width="111"                        Foreground="White"/>
         </Grid>
 
     </Grid>

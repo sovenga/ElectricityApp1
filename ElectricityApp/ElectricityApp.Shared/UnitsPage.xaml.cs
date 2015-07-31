@@ -275,11 +275,13 @@ namespace ElectricityApp
             lblRemainingUnits.Text = "You have " + REMAINING_UNITS + " Units Remaining";
             meterView.updateMeterBoxUnits(total_units);
             txtCurrentUnits.Text = ""+REMAINING_UNITS;
+
             messageBox("Total consumed Units for selected appliances is : " + total_units + " units");
             }
             catch (Exception ex){
                 messageBox("Please check your text fields");
             }
+            btnCalculate.IsEnabled = false;
 
         }
 
