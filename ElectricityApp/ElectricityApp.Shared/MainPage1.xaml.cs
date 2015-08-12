@@ -91,7 +91,7 @@ namespace ElectricityApp
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(UnitsPage));
+            this.Frame.Navigate(typeof(UnitsPage1));
         }
 
         private void btnLoginButton_Click(object sender, RoutedEventArgs e)

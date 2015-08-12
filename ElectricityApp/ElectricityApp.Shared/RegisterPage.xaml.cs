@@ -40,7 +40,7 @@ namespace ElectricityApp
 
         private void btnBack_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(MainPage));
+            this.Frame.Navigate(typeof(MainPage1));
         }
         private async void messageBox(string msg)
         {
@@ -60,7 +60,7 @@ namespace ElectricityApp
                     {
                         user.addUser(username,password);
                         messageBox("Account has been created");
-                        this.Frame.Navigate(typeof(MainPage));
+                        this.Frame.Navigate(typeof(MainPage1));
                     }
                     else
                     { messageBox("Passwords do not match!!!"); }

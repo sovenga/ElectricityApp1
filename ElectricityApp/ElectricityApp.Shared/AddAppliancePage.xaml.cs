@@ -55,7 +55,7 @@ namespace ElectricityApp
             {
                 applianceViewModel.addAppliance(name, watts, number);
                 messageBox("Appliance Has been Saved");
-                this.Frame.Navigate(typeof(UnitsPage));
+                this.Frame.Navigate(typeof(UnitsPage1));
             }
             else {
                messageBox("Error!!!! Please enter the name of the appliance");

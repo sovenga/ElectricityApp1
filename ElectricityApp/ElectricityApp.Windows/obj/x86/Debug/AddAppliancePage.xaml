@@ -11,7 +11,7 @@
         <Grid.Background>
             <ImageBrush Stretch="Fill" ImageSource="Assets/image8.JPG"/>
         </Grid.Background>
-        <Grid x:Name="mygrid" HorizontalAlignment="Left" Height="385" Margin="7,88,0,0" VerticalAlignment="Top" Width="393">
+        <Grid x:Name="mygrid" HorizontalAlignment="Center" Height="385" Margin="7,88,0,0" VerticalAlignment="Top" Width="393">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="35*"/>
                 <ColumnDefinition Width="22*"/>

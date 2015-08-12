@@ -39,7 +39,7 @@ namespace ElectricityApp
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(MainPage));
+            this.Frame.Navigate(typeof(MainPage1));
         }
 
         private void btnSubmit_Click(object sender, RoutedEventArgs e)

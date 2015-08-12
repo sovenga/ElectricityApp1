@@ -11,7 +11,7 @@
         <Grid.Background>
             <ImageBrush Stretch="Fill" ImageSource="Assets/image8.JPG"/>
         </Grid.Background>
-        <Grid HorizontalAlignment="Left" Height="394" VerticalAlignment="Top" Width="400">
+        <Grid HorizontalAlignment="Center" Height="394" VerticalAlignment="Top" Width="400">
             <TextBlock HorizontalAlignment="Left" Margin="0,164,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="172" Height="39" FontSize="14" FontWeight="Bold" Foreground="#FF111010">
     			<Run Text="ENTER "/>
     			<Run Text="YOUR "/>

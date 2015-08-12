@@ -11,41 +11,50 @@
         <Grid.Background>
             <ImageBrush Stretch="Fill" ImageSource="Assets/image8.JPG"/>
         </Grid.Background>
-        <ListView x:Name="mainListView"  SelectionMode="None" HorizontalAlignment="Center" Height="686" Margin="10,3,0,-49" VerticalAlignment="Top" Width="390">
+        <ListView x:Name="mainListView"  SelectionMode="None" HorizontalAlignment="Center" Height="686" Margin="5,3,-10,-49" VerticalAlignment="Top" Width="405">
+
             <Grid Height="610" Width="380">
                 <Grid HorizontalAlignment="Left" Height="705" Margin="0,11,-916,-106" VerticalAlignment="Top" Width="1296">
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="449*"/>
-                        <ColumnDefinition Width="836*"/>
+                        <ColumnDefinition Width="70*"/>
+                        <ColumnDefinition Width="81*"/>
+                        <ColumnDefinition Width="281*"/>
                     </Grid.ColumnDefinitions>
-                    <Button x:Name="btnBack1" Content="BACK" HorizontalAlignment="Left" Margin="-1,-21,0,0" VerticalAlignment="Top" Height="54" Width="121"/>
-                    <ListView x:Name="listView" HorizontalAlignment="Left" Height="295" Margin="5,94,0,0" VerticalAlignment="Top" Width="130"/>
-                    <Grid x:Name="calculatorGrid" HorizontalAlignment="Left" Height="280" Margin="135,59,0,0" VerticalAlignment="Top" Width="244">
+                    <Button x:Name="btnBack1" Content="BACK" HorizontalAlignment="Left" Margin="-1,-21,0,0" VerticalAlignment="Top" Height="54" Width="121" Click="btnBack1_Click_1"/>
+                    <ListView x:Name="listView" HorizontalAlignment="Left" Height="291" Margin="0,74,0,0" VerticalAlignment="Top" Width="205" SelectionMode="Multiple" FontSize="11"/>
+                    <Grid x:Name="calculatorGrid" HorizontalAlignment="Left" Height="280" Margin="195,54,0,0" VerticalAlignment="Top" Width="194" Grid.ColumnSpan="2" >
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="20*"/>
                             <ColumnDefinition Width="41*"/>
                         </Grid.ColumnDefinitions>
-                        <TextBlock x:Name="lblAppliance1" HorizontalAlignment="Left" Margin="5,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145" FontWeight="Bold" Grid.ColumnSpan="2"/>
-                        <TextBox x:Name="txtAppliance1Hours" HorizontalAlignment="Left" Margin="75,35,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="85" RenderTransformOrigin="0.733,0.417" Grid.Column="1"/>
-                        <TextBlock x:Name="lblAppliance2" HorizontalAlignment="Left" Margin="5,86,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145" FontWeight="Bold" Grid.ColumnSpan="2"/>
-                        <TextBox x:Name="txtAppliance2Hours" HorizontalAlignment="Left" Margin="75,75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="85" Grid.Column="1"/>
-                        <TextBlock x:Name="lblAppliance3" HorizontalAlignment="Left" Margin="5,126,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="140" FontWeight="Bold" Grid.ColumnSpan="2"/>
-                        <TextBox x:Name="txtAppliance3Hours" HorizontalAlignment="Left" Margin="75,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="85" Grid.Column="1"/>
-                        <TextBlock x:Name="lblAppliance4" HorizontalAlignment="Left" Margin="5,161,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145" FontWeight="Bold" Grid.ColumnSpan="2"/>
-                        <TextBox x:Name="txtAppliance4Hours" HorizontalAlignment="Left" Margin="75,155,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="85" Grid.Column="1"/>
-                        <TextBlock x:Name="lblAppliance5" HorizontalAlignment="Left" Margin="5,204,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="140" FontWeight="Bold" Grid.ColumnSpan="2"/>
-                        <TextBox x:Name="txtAppliance5Hours" HorizontalAlignment="Left" Margin="75,195,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="85" Grid.Column="1"/>
-                        <Button x:Name="btnCalculate" Content="CALCULATE UNITS" HorizontalAlignment="Left" Margin="65,225,0,-10" VerticalAlignment="Top" Click="btnCalculate_Click" Width="174" FontWeight="Normal" Height="60" Grid.ColumnSpan="2"/>
+                        <TextBlock x:Name="lblAppliance1" HorizontalAlignment="Left" Margin="-5,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145" Grid.ColumnSpan="2" FontSize="11"/>
+                        <TextBox x:Name="txtAppliance1Hours" HorizontalAlignment="Left" Margin="68.333,35,-1.833,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="61" RenderTransformOrigin="0.733,0.417" Grid.Column="1"/>
+                        <TextBlock x:Name="lblAppliance2" HorizontalAlignment="Left" Margin="-5,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145" Grid.ColumnSpan="2" FontSize="11"/>
+                        <TextBox x:Name="txtAppliance2Hours" HorizontalAlignment="Left" Margin="68.333,75,-0.833,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="60" Grid.Column="1"/>
+                        <TextBlock x:Name="lblAppliance3" HorizontalAlignment="Left" Margin="-5,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="140" Grid.ColumnSpan="2" FontSize="11"/>
+                        <TextBox x:Name="txtAppliance3Hours" HorizontalAlignment="Left" Margin="68.333,115,-0.833,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="60" Grid.Column="1"/>
+                        <TextBlock x:Name="lblAppliance4" HorizontalAlignment="Left" Margin="-10,165,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145" Grid.ColumnSpan="2" FontSize="11"/>
+                        <TextBox x:Name="txtAppliance4Hours" HorizontalAlignment="Left" Margin="68.333,155,-0.833,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="60" Grid.Column="1"/>
+                        <TextBlock x:Name="lblAppliance5" HorizontalAlignment="Left" Margin="-5,210,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="140" Grid.ColumnSpan="2" FontSize="11"/>
+                        <TextBox x:Name="txtAppliance5Hours" HorizontalAlignment="Left" Margin="68.333,195,-0.833,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="60" Grid.Column="1"/>
+                        <Button x:Name="btnCalculate" Content="CALCULATE UNITS" HorizontalAlignment="Left" Margin="11.667,232,0,-10" VerticalAlignment="Top" Click="btnCalculate_Click" Width="115" FontWeight="Normal" Height="50" Grid.Column="1" FontSize="11"/>
+                        <TextBlock HorizontalAlignment="Left" Margin="5,5,0,0" TextWrapping="Wrap" Text="Appliance Name" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="113"/>
+                        <TextBlock HorizontalAlignment="Left" Margin="36,5,-31,0" TextWrapping="Wrap" Text="Hours Used" VerticalAlignment="Top" Width="122" Grid.Column="1"/>
                     </Grid>
-                    <TextBlock HorizontalAlignment="Left" Margin="11,389,0,0" TextWrapping="Wrap" Text="Please No te that you can calalculate a maximum of five appliances at a time" VerticalAlignment="Top" FontSize="12" Height="13" Width="364"/>
-                    <Button x:Name="btnContinue" Content="Send To Calculator" HorizontalAlignment="Left" Margin="15,521,0,0" VerticalAlignment="Top" Width="155" FontSize="14"/>
-                    <Button x:Name="btnHistory" Content="View History" HorizontalAlignment="Left" Margin="190,521,0,0" VerticalAlignment="Top" Width="160" Click="btnHistory_Click_1"/>
-                    <HyperlinkButton Content="Start Over" HorizontalAlignment="Left" Margin="225,336,0,0" VerticalAlignment="Top" Width="145" Height="42"/>
-                    <TextBlock HorizontalAlignment="Left" Margin="125,-7,0,0" TextWrapping="Wrap" Text="ELECTRICITY UNITS CALCULATOR" VerticalAlignment="Top" FontSize="16" Width="255" FontWeight="Bold" Height="21"/>
-                    <TextBlock HorizontalAlignment="Left" Margin="95,34,0,0" TextWrapping="Wrap" Text="CURRENT UNITS" VerticalAlignment="Top" Width="95"/>
-                    <TextBox x:Name="txtCurrentUnits" HorizontalAlignment="Left" Margin="205,20,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="125" Height="25"/>
-                    <TextBlock HorizontalAlignment="Left" Margin="342,29,0,0" TextWrapping="Wrap" Text="UNITS" VerticalAlignment="Top"/>
-                    <TextBlock x:Name="lblRemainingUnits" HorizontalAlignment="Left" Margin="15,434,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="90" Width="355"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="6,414,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" Height="50" Width="364" Grid.ColumnSpan="2" FontFamily="SimSun-ExtB" Foreground="#FFF70606">
+                    	<Run Text="Please Note that you can "/>
+                    	<Run Text="calculate "/>
+                    	<Run Text="a maximum of five appliances at a time"/>
+                    </TextBlock>
+                    <Button x:Name="btnContinue" Content="Send To Calculator" HorizontalAlignment="Left" Margin="15,521,0,0" VerticalAlignment="Top" Width="155" FontSize="14" Click="btnContinue_Click"/>
+                    <Button x:Name="btnHistory" Content="View History" HorizontalAlignment="Left" Margin="190,521,0,0" VerticalAlignment="Top" Width="160" Click="btnHistory_Click_1" Grid.ColumnSpan="2"/>
+                    <HyperlinkButton Content="Start Over" HorizontalAlignment="Left" Margin="10,357,0,0" VerticalAlignment="Top" Width="165" Height="42" Click="HyperlinkButton_Click_1" Grid.Column="1" FontWeight="Bold"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="125,-7,0,0" TextWrapping="Wrap" Text="ELECTRICITY UNITS CALCULATOR" VerticalAlignment="Top" FontSize="16" Width="255" FontWeight="Bold" Height="21" Grid.ColumnSpan="2"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="53,34,0,0" TextWrapping="Wrap" Text="CURRENT UNITS" VerticalAlignment="Top" Width="137"/>
+                    <TextBox x:Name="txtCurrentUnits" HorizontalAlignment="Left" Margin="205,20,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="130" Height="25" Grid.ColumnSpan="2"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="132,29,0,0" TextWrapping="Wrap" Text="UNITS" VerticalAlignment="Top" Grid.Column="1"/>
+                    <TextBlock x:Name="lblRemainingUnits" HorizontalAlignment="Left" Margin="15,474,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="55" Width="355" Grid.ColumnSpan="2"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="6,49,0,0" TextWrapping="Wrap" Text="My Appliances" VerticalAlignment="Top" FontWeight="Bold" FontStyle="Italic" FontSize="18"/>
                 </Grid>
             </Grid>
 

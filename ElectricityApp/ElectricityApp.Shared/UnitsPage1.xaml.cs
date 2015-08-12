@@ -16,7 +16,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using System.Windows;
-
+//using Windows.Phone.UI.Input;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -60,7 +60,8 @@ namespace ElectricityApp
 
             double height = bounds.Height;
             double width = bounds.Width;
-
+            //HardwareButtons.BackPressed += OnBackPressed;
+            
 
             //mygrid.Width = width * 1000.5f;
             //PageGrid.Width = width;
@@ -71,7 +72,7 @@ namespace ElectricityApp
         {
             //MeterBox box = null; 
             //txtAppliance1Hours.IsEnabled = true;
-            //this.calculatorGrid.Visibility = Visibility.Collapsed;
+            this.calculatorGrid.Visibility = Visibility.Collapsed;
             appliancesModel = new AppliancesViewModel();
             try
             {
@@ -237,6 +238,7 @@ namespace ElectricityApp
                     tota_number = total_numbers_appliance1 + total_numbers_appliance2 + total_numbers_appliance3 + total_numbers_appliance4 + total_numbers_appliance5;
                     total_hours = total_hours_appliance1 + total_hours_appliance2 + total_hours_appliance3 + total_hours_appliance4 + total_hours_appliance5;
                     final_tota1_number = tota_number;
+                    this.listView.Visibility = Visibility.Collapsed;
                 }
 
             }
@@ -244,6 +246,7 @@ namespace ElectricityApp
             {
                 messageBox(" " + ex.Message);
             }
+            
 
         }
 
@@ -323,5 +326,158 @@ namespace ElectricityApp
         {
             this.Frame.Navigate(typeof(HistoryPage));
         }
+
+        private void btnContinue_Click(object sender, RoutedEventArgs e)
+        {
+            System.Text.StringBuilder sb = new System.Text.StringBuilder();
+            var sel = listView.SelectedItems.Cast<Object>().ToArray();
+            int count = 1; double appliance1Watts = 0.0, appliance2Watts = 0.0,
+            appliance3Watts = 0.0, appliance4Watts = 0.0, appliance5Watts = 0.0;
+            string[] applianceNames;
+
+
+            applianceNames = new string[sel.Count()];
+            txtAppliance1Hours.Text = "0"; txtAppliance2Hours.Text = "0"; txtAppliance3Hours.Text = "0"; txtAppliance4Hours.Text = "0"; txtAppliance5Hours.Text = "0";
+            string txtAppliance1 = "";
+            this.calculatorGrid.Visibility = Visibility.Visible;
+            txtAppliance1Hours.IsEnabled = false;
+            txtAppliance2Hours.IsEnabled = false;
+            txtAppliance3Hours.IsEnabled = false;
+            txtAppliance4Hours.IsEnabled = false;
+            txtAppliance5Hours.IsEnabled = false;
+            try
+            {
+                string appliance2 = listView.Items[0].ToString();
+
+                for (int i = 0; i < sel.Count(); i++)
+                {
+                    applianceNames[i] = sel[i].ToString();
+                }
+                for (int x = 0; x < applianceNames.Count(); x++)
+                {
+                    if (applianceNames.Count() > x)
+                    {
+                        txtAppliance1Hours.IsEnabled = true;
+                        string myNumbers = "";
+                        myNumbers = applianceNames[0];
+                        myNumbers = myNumbers.Substring(0, myNumbers.IndexOf('#'));
+                        total_numbers_appliance1 = Convert.ToInt32(myNumbers);
+
+                        string myWatts = "";
+                        myWatts = applianceNames[0];
+                        myWatts = myWatts.Substring(myWatts.IndexOf(':') + 1);
+                        appliance1Watts = Convert.ToDouble(myWatts);
+                        lblAppliance1.Text = applianceNames[0];
+
+                        txtAppliance1 = txtAppliance1Hours.Text;
+                        total_hours_appliance1 = Convert.ToInt32(txtAppliance1);
+                    }
+
+                    if (applianceNames.Count() > x + 1)
+                    {
+                        txtAppliance2Hours.IsEnabled = true;
+                        string myNumbers = "";
+                        myNumbers = applianceNames[1];
+                        myNumbers = myNumbers.Substring(0, myNumbers.IndexOf('#'));
+                        total_numbers_appliance2 = Convert.ToInt32(myNumbers);
+
+                        string myWatts = "";
+                        myWatts = applianceNames[1];
+                        myWatts = myWatts.Substring(myWatts.IndexOf(':') + 1);
+                        appliance2Watts = Convert.ToDouble(myWatts);
+                        lblAppliance2.Text = applianceNames[1];
+
+                        string txtAppliance2 = txtAppliance2Hours.Text;
+                        total_hours_appliance2 = Convert.ToInt32(txtAppliance2);
+                    }
+
+                    if (applianceNames.Count() > x + 1 + 1)
+                    {
+                        txtAppliance3Hours.IsEnabled = true;
+                        string myNumberss = "";
+                        myNumberss = applianceNames[2];
+                        myNumberss = myNumberss.Substring(0, myNumberss.IndexOf('#'));
+                        total_numbers_appliance3 = Convert.ToInt32(myNumberss);
+
+                        string myWatts = "";
+                        myWatts = applianceNames[2];
+                        myWatts = myWatts.Substring(myWatts.IndexOf(':') + 1);
+                        appliance3Watts = Convert.ToDouble(myWatts);
+                        lblAppliance3.Text = applianceNames[2];
+                        string txtAppliance3 = txtAppliance3Hours.Text;
+                        total_hours_appliance3 = Convert.ToInt32(txtAppliance3);
+                    }
+
+                    if (applianceNames.Count() > x + 1 + 1 + 1)
+                    {
+                        txtAppliance4Hours.IsEnabled = true;
+                        string myNumbers = "";
+                        myNumbers = applianceNames[3];
+                        myNumbers = myNumbers.Substring(0, myNumbers.IndexOf('#'));
+                        total_numbers_appliance4 = Convert.ToInt32(myNumbers);
+
+                        string myWatts = "";
+                        myWatts = applianceNames[3];
+                        myWatts = myWatts.Substring(myWatts.IndexOf(':') + 1);
+                        appliance4Watts = Convert.ToDouble(myWatts);
+                        lblAppliance4.Text = applianceNames[3];
+
+                        string txtAppliance4 = txtAppliance4Hours.Text;
+                        total_hours_appliance4 = Convert.ToInt32(txtAppliance4);
+                    }
+
+                    if (applianceNames.Count() > x + 1 + 1 + 1 + 1)
+                    {
+                        txtAppliance5Hours.IsEnabled = true;
+                        string myNumbers = "";
+                        myNumbers = applianceNames[4];
+                        myNumbers = myNumbers.Substring(0, myNumbers.IndexOf('#'));
+                        total_numbers_appliance5 = Convert.ToInt32(myNumbers);
+
+                        string myWatts = "";
+                        myWatts = applianceNames[4];
+                        myWatts = myWatts.Substring(myWatts.IndexOf(':') + 1);
+                        appliance5Watts = Convert.ToDouble(myWatts);
+                        lblAppliance5.Text = applianceNames[4];
+
+                        string txtAppliance5 = txtAppliance5Hours.Text;
+                        total_hours_appliance5 = Convert.ToInt32(txtAppliance5);
+                    }
+                    total_watts = appliance1Watts + appliance2Watts + appliance3Watts +
+                        appliance4Watts + appliance5Watts;
+                    tota_number = total_numbers_appliance1 + total_numbers_appliance2 + total_numbers_appliance3 + total_numbers_appliance4 + total_numbers_appliance5;
+                    total_hours = total_hours_appliance1 + total_hours_appliance2 + total_hours_appliance3 + total_hours_appliance4 + total_hours_appliance5;
+                    final_tota1_number = tota_number;
+                }
+
+            }
+            catch (Exception ex)
+            {
+                messageBox(" " + ex.Message);
+            }
+        }
+
+        private void btnBack1_Click_1(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(WelcomePage));
+        }
+
+        private void HyperlinkButton_Click_1(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(UnitsPage1));
+        }
+        void PageBackKeyPress(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            this.Frame.Navigate(typeof(WelcomePage));
+        }
+      
+        #if WINDOWS_PHONE_APP
+        private void OnBackPressed(object sender, Windows.Phone.UI.Input.BackPressedEventArgs e)
+        {
+            e.Handled = true;
+            this.Frame.Navigate(typeof(WelcomePage));
+        }
+        #endif
+        
     }
 }

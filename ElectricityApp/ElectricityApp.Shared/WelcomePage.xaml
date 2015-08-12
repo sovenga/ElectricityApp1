@@ -19,7 +19,7 @@
                 </ImageBrush.RelativeTransform>
             </ImageBrush>
         </Grid.Background>
-        <Grid HorizontalAlignment="Left" Height="348" Margin="30,18,0,0" VerticalAlignment="Top" Width="360" Grid.ColumnSpan="2">
+        <Grid HorizontalAlignment="Center" Height="348" Margin="30,18,0,0" VerticalAlignment="Top" Width="360" Grid.ColumnSpan="2">
             <HyperlinkButton Content="CHECK UNITS" HorizontalAlignment="Left" Margin="45,141,0,0" VerticalAlignment="Top" FontSize="22" Click="HyperlinkButton_Click_2" FontWeight="Bold"/>
             <HyperlinkButton x:Name="linkLogout" Content="LOGOUT" HorizontalAlignment="Left" Margin="45,284,0,0" VerticalAlignment="Top" FontSize="22" Click="linkLogout_Click" FontWeight="Bold"/>
             <HyperlinkButton x:Name="linkremoveaccount" Content="REMOVE ACCOUNT" HorizontalAlignment="Left" Margin="45,210,0,0" VerticalAlignment="Top" FontSize="22" Click="linkremoveaccount_Click" FontWeight="Bold"/>

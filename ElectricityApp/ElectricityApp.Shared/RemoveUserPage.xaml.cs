@@ -71,7 +71,7 @@ namespace ElectricityApp
                         {
                             user.removeUser(username);
 
-                            this.Frame.Navigate(typeof(MainPage));
+                            this.Frame.Navigate(typeof(MainPage1));
                         }
                     else if(user.verify(username) == null)
                         { 
