@@ -31,10 +31,10 @@ namespace ElectricityApp
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class UnitsPage : Page
+    public sealed partial class UnitsPage1 : Page
     {
-         MeterViewModel meterView = new MeterViewModel();
-        double CURRENT_UNITS = 0.0,REMAINING_UNITS=0.0;
+        MeterViewModel meterView = new MeterViewModel();
+        double CURRENT_UNITS = 0.0, REMAINING_UNITS = 0.0;
         List<Appliance> listAppliances = null;
         AppliancesViewModel appliancesModel = null;
         HistoryViewModel history = null;
@@ -52,7 +52,7 @@ namespace ElectricityApp
         int total_numbers_appliance1 = 0, total_numbers_appliance2 = 0, total_numbers_appliance3 = 0, total_numbers_appliance4 = 0, total_numbers_appliance5 = 0;
         int total_hours_appliance1 = 0, total_hours_appliance2 = 0, total_hours_appliance3 = 0, total_hours_appliance4 = 0, total_hours_appliance5 = 0;
 
-        public UnitsPage()
+        public UnitsPage1()
         {
             this.InitializeComponent();
             txtCurrentUnits.Text = "0";
@@ -63,25 +63,25 @@ namespace ElectricityApp
 
 
             //mygrid.Width = width * 1000.5f;
-            PageGrid.Width = width;
-           
+            //PageGrid.Width = width;
+
             //
         }
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             //MeterBox box = null; 
             //txtAppliance1Hours.IsEnabled = true;
-            this.calculatorGrid.Visibility = Visibility.Collapsed;
+            //this.calculatorGrid.Visibility = Visibility.Collapsed;
             appliancesModel = new AppliancesViewModel();
             try
-            {  
-               MeterBox unitObject = meterView.getMeterUnits();
+            {
+                MeterBox unitObject = meterView.getMeterUnits();
                 appliances = appliancesModel.getAllAppliances();
                 if (appliances != null)
                 {
-                    if (unitObject != null) 
+                    if (unitObject != null)
                     {
-                        txtCurrentUnits.Text = "" + unitObject.currentUnits; 
+                        txtCurrentUnits.Text = "" + unitObject.currentUnits;
                         foreach (var ap in appliances)
                         {
                             listView.Items.Add(ap.NUMBER_OF_ITEMS + "# " + ap.APPLIANCE_NAME + "(s) WATTS:" + ap.WATTS);
@@ -91,7 +91,7 @@ namespace ElectricityApp
                     {
                         messageBox("No Meter Box added, please add your meter box before");
                     }
-                    
+
                 }
                 else
                 {
@@ -124,7 +124,7 @@ namespace ElectricityApp
             appliance3Watts = 0.0, appliance4Watts = 0.0, appliance5Watts = 0.0;
             string[] applianceNames;
 
-            
+
             applianceNames = new string[sel.Count()];
             txtAppliance1Hours.Text = "0"; txtAppliance2Hours.Text = "0"; txtAppliance3Hours.Text = "0"; txtAppliance4Hours.Text = "0"; txtAppliance5Hours.Text = "0";
             string txtAppliance1 = "";
@@ -238,7 +238,7 @@ namespace ElectricityApp
                     total_hours = total_hours_appliance1 + total_hours_appliance2 + total_hours_appliance3 + total_hours_appliance4 + total_hours_appliance5;
                     final_tota1_number = tota_number;
                 }
-               
+
             }
             catch (Exception ex)
             {
@@ -255,7 +255,7 @@ namespace ElectricityApp
             int day = date.Day;
             int month = date.Month;
             int year = date.Year;
-            string myDate = day +"//"+ month +"//"+ year;
+            string myDate = day + "//" + month + "//" + year;
 
             applianceViewModel = new ApplianceViewModel();
             CURRENT_UNITS = Convert.ToDouble(txtCurrentUnits.Text);
@@ -265,27 +265,29 @@ namespace ElectricityApp
             string appliance3 = txtAppliance3Hours.Text;
             string appliance4 = txtAppliance4Hours.Text;
             string appliance5 = txtAppliance5Hours.Text;
-            try { 
-            double first_appliance_hours = Convert.ToDouble(appliance1);
-            double second_appliance_hours = Convert.ToDouble(appliance2);
-            double third_appliance_hours = Convert.ToDouble(appliance3);
-            double fourth_appliance_hours = Convert.ToDouble(appliance4);
-            double fifth_appliance_hours = Convert.ToDouble(appliance5);
+            try
+            {
+                double first_appliance_hours = Convert.ToDouble(appliance1);
+                double second_appliance_hours = Convert.ToDouble(appliance2);
+                double third_appliance_hours = Convert.ToDouble(appliance3);
+                double fourth_appliance_hours = Convert.ToDouble(appliance4);
+                double fifth_appliance_hours = Convert.ToDouble(appliance5);
 
-            double total_appliance_hours = first_appliance_hours + second_appliance_hours + third_appliance_hours + fourth_appliance_hours + fifth_appliance_hours;
-            Kilo_Watts = (total_watts * total_appliance_hours) * tota_number;
+                double total_appliance_hours = first_appliance_hours + second_appliance_hours + third_appliance_hours + fourth_appliance_hours + fifth_appliance_hours;
+                Kilo_Watts = (total_watts * total_appliance_hours) * tota_number;
 
-            total_units = Kilo_Watts / 1000;
-            REMAINING_UNITS += CURRENT_UNITS - total_units;
-            string checkDate = date.ToString("D");
-            history.saveHistory(final_tota1_number, total_units, REMAINING_UNITS, checkDate);
-            lblRemainingUnits.Text = "You have " + REMAINING_UNITS + " Units Remaining";
-            meterView.updateMeterBoxUnits(total_units);
-            txtCurrentUnits.Text = ""+REMAINING_UNITS;
+                total_units = Kilo_Watts / 1000;
+                REMAINING_UNITS += CURRENT_UNITS - total_units;
+                string checkDate = date.ToString("D");
+                history.saveHistory(final_tota1_number, total_units, REMAINING_UNITS, checkDate);
+                lblRemainingUnits.Text = "You have " + REMAINING_UNITS + " Units Remaining";
+                meterView.updateMeterBoxUnits(total_units);
+                txtCurrentUnits.Text = "" + REMAINING_UNITS;
 
-            messageBox("Total consumed Units for selected appliances is : " + total_units + " units");
+                messageBox("Total consumed Units for selected appliances is : " + total_units + " units");
             }
-            catch (Exception ex){
+            catch (Exception ex)
+            {
                 messageBox("Please check your text fields");
             }
             btnCalculate.IsEnabled = false;
@@ -294,7 +296,7 @@ namespace ElectricityApp
 
         private void HyperlinkButton_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(UnitsPage));
+            this.Frame.Navigate(typeof(UnitsPage1));
         }
 
         private void listView_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -315,6 +317,11 @@ namespace ElectricityApp
         private void btnBack1_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(WelcomePage));
+        }
+
+        private void btnHistory_Click_1(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(HistoryPage));
         }
     }
 }

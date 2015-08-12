@@ -21,6 +21,9 @@
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)CalculatorPage.xaml.cs">
+      <DependentUpon>CalculatorPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)CheckUnitsPage.xaml.cs">
       <DependentUpon>CheckUnitsPage.xaml</DependentUpon>
     </Compile>
@@ -33,6 +36,9 @@
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)MainPage1.xaml.cs">
+      <DependentUpon>MainPage1.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)model\Appliance.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)model\History.cs" />
@@ -50,6 +56,9 @@
     <Compile Include="$(MSBuildThisFileDirectory)SQLiteAsync.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)UnitsPage.xaml.cs">
       <DependentUpon>UnitsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)UnitsPage1.xaml.cs">
+      <DependentUpon>UnitsPage1.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)ViewAppliances.xaml.cs">
       <DependentUpon>ViewAppliances.xaml</DependentUpon>
@@ -80,6 +89,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="$(MSBuildThisFileDirectory)CalculatorPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="$(MSBuildThisFileDirectory)CheckUnitsPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -96,6 +109,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="$(MSBuildThisFileDirectory)MainPage1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="$(MSBuildThisFileDirectory)RegisterPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -105,6 +122,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="$(MSBuildThisFileDirectory)UnitsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)UnitsPage1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

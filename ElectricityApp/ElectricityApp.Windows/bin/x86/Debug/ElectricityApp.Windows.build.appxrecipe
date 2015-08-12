@@ -92,6 +92,9 @@
     <AppxPackagedFile Include="D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.Windows\bin\x86\Debug\AddMeterPage.xbf">
       <PackagePath>AddMeterPage.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.Windows\bin\x86\Debug\CalculatorPage.xbf">
+      <PackagePath>CalculatorPage.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.Windows\bin\x86\Debug\CheckUnitsPage.xbf">
       <PackagePath>CheckUnitsPage.xbf</PackagePath>
     </AppxPackagedFile>
@@ -104,6 +107,9 @@
     <AppxPackagedFile Include="D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.Windows\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.Windows\bin\x86\Debug\MainPage1.xbf">
+      <PackagePath>MainPage1.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.Windows\bin\x86\Debug\RegisterPage.xbf">
       <PackagePath>RegisterPage.xbf</PackagePath>
     </AppxPackagedFile>
@@ -112,6 +118,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.Windows\bin\x86\Debug\UnitsPage.xbf">
       <PackagePath>UnitsPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.Windows\bin\x86\Debug\UnitsPage1.xbf">
+      <PackagePath>UnitsPage1.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.Windows\bin\x86\Debug\ViewAppliances.xbf">
       <PackagePath>ViewAppliances.xbf</PackagePath>

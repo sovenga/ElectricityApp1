@@ -23,22 +23,22 @@ namespace ElectricityApp
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class MainPage : Page
+    public sealed partial class MainPage1 : Page
     {
         private App app = (Application.Current as App);
         UserViewModel user = null;
         public string DBPath { get; set; }
-        public MainPage()
+        public MainPage1()
         {
             this.InitializeComponent();
-            var bounds = Window.Current.Bounds;
-            
+            /*var bounds = Window.Current.Bounds;
+
             double height = bounds.Height;
             double width = bounds.Width;
 
 
             mygrid.Width = width * 10.5f;
-            PageGrid.Width = width+10000;
+            PageGrid.Width = width + 10000;*/
         }
 
         private void TextBlock_SelectionChanged(object sender, RoutedEventArgs e)
@@ -51,22 +51,22 @@ namespace ElectricityApp
             await msgDlg.ShowAsync();
         }
 
-        private  void Button_Click(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
             string username = txtUsername.Text;
 
             string password = txtPassword.Password;
-                user = new UserViewModel();
-                var valid = user.getUser(username,password);
-            
-                if (valid != null)
-                {
-                    this.Frame.Navigate(typeof(WelcomePage));
-                }
-                else
-                {
-                    messageBox("Invalid Credentials Entered");
-                }
+            user = new UserViewModel();
+            var valid = user.getUser(username, password);
+
+            if (valid != null)
+            {
+                this.Frame.Navigate(typeof(WelcomePage));
+            }
+            else
+            {
+                messageBox("Invalid Credentials Entered");
+            }
         }
 
         private void HyperlinkButton_Click(object sender, RoutedEventArgs e)
@@ -78,7 +78,7 @@ namespace ElectricityApp
         {
             this.Frame.Navigate(typeof(ForgotPasswordPage));
         }
-      
+
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(ViewPage));
@@ -115,7 +115,7 @@ namespace ElectricityApp
 
         private void HyperlinkButton_Click_3(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(UnitsPage1));
+            this.Frame.Navigate(typeof(CalculatorPage));
         }
     }
 }

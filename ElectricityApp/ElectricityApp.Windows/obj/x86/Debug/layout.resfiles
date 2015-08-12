@@ -20,14 +20,17 @@ Assets\StoreLogo.scale-100.png
 AddAppliancePage.xbf
 AddMeterPage.xbf
 App.xbf
+CalculatorPage.xbf
 CheckUnitsPage.xbf
 ElectricityApp.Windows.xr.xml
 ForgotPasswordPage.xbf
 HistoryPage.xbf
 MainPage.xbf
+MainPage1.xbf
 RegisterPage.xbf
 RemoveUserPage.xbf
 UnitsPage.xbf
+UnitsPage1.xbf
 ViewAppliances.xbf
 ViewPage.xbf
 WelcomePage.xbf

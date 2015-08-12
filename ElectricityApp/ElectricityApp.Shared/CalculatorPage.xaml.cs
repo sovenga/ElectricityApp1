@@ -17,13 +17,6 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using System.Windows;
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Windows;
-
-
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace ElectricityApp
@@ -31,9 +24,9 @@ namespace ElectricityApp
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class UnitsPage : Page
+    public sealed partial class CalculatorPage : Page
     {
-         MeterViewModel meterView = new MeterViewModel();
+      MeterViewModel meterView = new MeterViewModel();
         double CURRENT_UNITS = 0.0,REMAINING_UNITS=0.0;
         List<Appliance> listAppliances = null;
         AppliancesViewModel appliancesModel = null;
@@ -52,7 +45,7 @@ namespace ElectricityApp
         int total_numbers_appliance1 = 0, total_numbers_appliance2 = 0, total_numbers_appliance3 = 0, total_numbers_appliance4 = 0, total_numbers_appliance5 = 0;
         int total_hours_appliance1 = 0, total_hours_appliance2 = 0, total_hours_appliance3 = 0, total_hours_appliance4 = 0, total_hours_appliance5 = 0;
 
-        public UnitsPage()
+        public CalculatorPage()
         {
             this.InitializeComponent();
             txtCurrentUnits.Text = "0";

@@ -43,13 +43,13 @@ namespace ElectricityApp
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(MainPage));
+            this.Frame.Navigate(typeof(MainPage1));
 
         }
 
         private void linkView_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(UnitsPage));
+            this.Frame.Navigate(typeof(UnitsPage1));
         }
         private async void messageBox(string msg)
         {
@@ -88,7 +88,7 @@ namespace ElectricityApp
 
         private void HyperlinkButton_Click_2(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(UnitsPage));
+            this.Frame.Navigate(typeof(UnitsPage1));
         }
         private void Commandhandler(IUICommand cmd)
         {
@@ -101,7 +101,7 @@ namespace ElectricityApp
 
                     try
                     {
-                        this.Frame.Navigate(typeof(MainPage));
+                        this.Frame.Navigate(typeof(MainPage1));
                     }
                     catch (Exception ex)
                     {

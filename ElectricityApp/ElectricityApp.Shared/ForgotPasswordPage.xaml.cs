@@ -27,6 +27,14 @@ namespace ElectricityApp
         public ForgotPasswordPage()
         {
             this.InitializeComponent();
+            var bounds = Window.Current.Bounds;
+
+            double height = bounds.Height;
+            double width = bounds.Width;
+
+
+            mygrid.Width = width * 10.5f;
+            PageGrid.Width = width + 10000;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

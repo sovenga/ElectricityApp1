@@ -28,6 +28,14 @@ namespace ElectricityApp
         public RegisterPage()
         {
             this.InitializeComponent();
+            var bounds = Window.Current.Bounds;
+
+            double height = bounds.Height;
+            double width = bounds.Width;
+
+
+            mygrid.Width = width * 10.5f;
+            PageGrid.Width = width + 10000;
         }
 
         private void btnBack_Click(object sender, RoutedEventArgs e)
