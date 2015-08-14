@@ -56,6 +56,7 @@ namespace ElectricityApp
         {
             this.InitializeComponent();
             txtCurrentUnits.Text = "0";
+            
             var bounds = Window.Current.Bounds;
 
             double height = bounds.Height;
@@ -83,6 +84,7 @@ namespace ElectricityApp
                     if (unitObject != null)
                     {
                         txtCurrentUnits.Text = "" + unitObject.currentUnits;
+                        lblUsername.Text = unitObject.meterBoxNumber;
                         foreach (var ap in appliances)
                         {
                             listView.Items.Add(ap.NUMBER_OF_ITEMS + "# " + ap.APPLIANCE_NAME + "(s) WATTS:" + ap.WATTS);
@@ -471,13 +473,14 @@ namespace ElectricityApp
             this.Frame.Navigate(typeof(WelcomePage));
         }
       
-        #if WINDOWS_PHONE_APP
-        private void OnBackPressed(object sender, Windows.Phone.UI.Input.BackPressedEventArgs e)
+      
+      
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            e.Handled = true;
             this.Frame.Navigate(typeof(WelcomePage));
         }
-        #endif
+       
         
     }
 }

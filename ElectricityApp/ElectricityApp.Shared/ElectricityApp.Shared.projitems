@@ -137,6 +137,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="$(MSBuildThisFileDirectory)Assets\appliances.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\back2.png" />
     <Content Include="$(MSBuildThisFileDirectory)Assets\electricity.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)Assets\electricity1.png" />
     <Content Include="$(MSBuildThisFileDirectory)Assets\electricity2.jpg" />

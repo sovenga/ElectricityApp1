@@ -38,6 +38,9 @@
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.Shared\Assets\back2.png">
+      <PackagePath>Assets\back2.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.Shared\Assets\electricity1.png">
       <PackagePath>Assets\electricity1.png</PackagePath>
     </AppxPackagedFile>

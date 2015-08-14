@@ -32,7 +32,7 @@
             <TextBox x:Name="txtNumberOfItems" HorizontalAlignment="Left" Margin="319,163,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="66" Grid.ColumnSpan="2"/>
             <TextBlock HorizontalAlignment="Left" Margin="10,178,0,0" TextWrapping="Wrap" Text="NUMBER OF ITEMS OF SAME TYPE" VerticalAlignment="Top" FontSize="20" RenderTransformOrigin="0.51,2.619"/>
         </Grid>
-        <TextBlock HorizontalAlignment="Left" Margin="121,10,0,0" TextWrapping="Wrap" Text="ELECTRICITY UNITS CALCULATOR" VerticalAlignment="Top" FontSize="16" Width="269" FontWeight="Bold" Height="38"/>
+        <TextBlock x:Name="lblUsername" HorizontalAlignment="Left" Margin="240,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="16" Width="150" FontWeight="Bold" Height="38"/>
         <Button x:Name="tblBack2" Content="BACK" HorizontalAlignment="Left" Margin="7,0,0,0" VerticalAlignment="Top" Height="56" Click="tblBack2_Click" Width="70"/>
 
     </Grid>

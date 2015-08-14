@@ -28,12 +28,12 @@
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Margin" />
       <RootProperty Name="TextWrapping" />
-      <RootProperty Name="Text" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="FontSize" />
       <RootProperty Name="Width" />
       <RootProperty Name="FontWeight" />
       <RootProperty Name="Height" />
+      <RootProperty Name="Text" />
       <RootProperty Name="FontStyle" />
       <RootProperty Name="RenderTransformOrigin" />
       <RootProperty Name="FontFamily" />

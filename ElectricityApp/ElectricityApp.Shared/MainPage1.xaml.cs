@@ -96,22 +96,33 @@ namespace ElectricityApp
 
         private void btnLoginButton_Click(object sender, RoutedEventArgs e)
         {
+            Page page = new Page();
 
             string username = txtUsername.Text;
 
             string password = txtPassword.Password;
             user = new UserViewModel();
             var valid = user.getUser(username, password);
-
+            
+       
             if (valid != null)
             {
-                this.Frame.Navigate(typeof(WelcomePage));
+                this.Frame.Navigate(typeof(WelcomePage),user.USERNAME);
             }
             else
             {
                 messageBox("Invalid Credentials Entered");
-            }
+            }//LoadStateEventArgs
         }
+        /*private void NavigationHelper_LoadState(object sender, LoadStateEventArgs e)
+        {
+            Employee emp = e.NavigationParameter as Employee;
+            if (emp != null)
+            {
+                txtName.Text = emp.Name;
+                txtID.Text = emp.ID.ToString();
+            }
+        }*/
 
         private void HyperlinkButton_Click_3(object sender, RoutedEventArgs e)
         {

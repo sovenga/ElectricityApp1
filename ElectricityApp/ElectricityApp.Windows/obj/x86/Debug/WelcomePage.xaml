@@ -19,7 +19,7 @@
                 </ImageBrush.RelativeTransform>
             </ImageBrush>
         </Grid.Background>
-        <Grid HorizontalAlignment="Center" Height="348" Margin="30,18,0,0" VerticalAlignment="Top" Width="360" Grid.ColumnSpan="2">
+        <Grid HorizontalAlignment="Center" Height="348" Margin="25,98,15,0" VerticalAlignment="Top" Width="360" Grid.ColumnSpan="2">
             <HyperlinkButton x:ConnectionId='1' Content="CHECK UNITS" HorizontalAlignment="Left" Margin="45,141,0,0" VerticalAlignment="Top" FontSize="22"                                 FontWeight="Bold"/>
             <HyperlinkButton x:ConnectionId='2' x:Name="linkLogout" Content="LOGOUT" HorizontalAlignment="Left" Margin="45,284,0,0" VerticalAlignment="Top" FontSize="22"                          FontWeight="Bold"/>
             <HyperlinkButton x:ConnectionId='3' x:Name="linkremoveaccount" Content="REMOVE ACCOUNT" HorizontalAlignment="Left" Margin="45,210,0,0" VerticalAlignment="Top" FontSize="22"                                 FontWeight="Bold"/>
@@ -28,6 +28,7 @@
             <HyperlinkButton x:ConnectionId='6' x:Name="linkAddMeter" Content="ADD METER BOX" HorizontalAlignment="Left" Margin="45,104,0,0" VerticalAlignment="Top" FontSize="22"                            FontWeight="Bold"/>
             <TextBlock HorizontalAlignment="Left" Margin="0,10,0,0" TextWrapping="Wrap" Text="ELECTRICITY UNITS CALCULATOR" VerticalAlignment="Top" FontSize="22" Width="349" FontWeight="Bold"/>
         </Grid>
+        <TextBlock x:Name="lblUsername" Grid.Column="1" HorizontalAlignment="Left" Margin="36.667,13,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="45" Width="115"/>
 
     </Grid>
 </Page>

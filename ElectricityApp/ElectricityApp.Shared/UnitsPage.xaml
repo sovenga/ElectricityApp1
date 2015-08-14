@@ -11,7 +11,7 @@
         <Grid.Background>
             <ImageBrush ImageSource="Assets/image8.JPG" Stretch="Fill"/>
         </Grid.Background>
-        <TextBlock HorizontalAlignment="Left" Margin="175,10,0,0" TextWrapping="Wrap" Text="ELECTRICITY UNITS CALCULATOR" VerticalAlignment="Top" FontSize="18" Width="305" FontWeight="Bold" Height="21"/>
+        <TextBlock x:Name="lblUsername" HorizontalAlignment="Left" Margin="160,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" Width="225" FontWeight="Bold" Height="38"/>
         <Button x:Name="btnContinue" Content="SEND TO CALCULATOR" HorizontalAlignment="Left" Margin="26,678,0,0" VerticalAlignment="Top" Height="44" Width="250" Click="Button_Click">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -66,7 +66,7 @@
         	<Run Text="my "/>
         	<Run Text="Appliances"/>
         </TextBlock>
-        <Button x:Name="btnBack1" Content="BACK" HorizontalAlignment="Left" Margin="7,11,0,0" VerticalAlignment="Top" Click="btnBack1_Click" Height="37" Width="74"/>
+        <Button x:Name="btnBack1" Content="BACK" HorizontalAlignment="Left" Margin="6,-5,0,0" VerticalAlignment="Top" Click="btnBack1_Click" Height="37" Width="74"/>
         <ListView x:Name="listView" SelectionMode="Multiple" HorizontalAlignment="Left" Height="314" Margin="64,139,0,0" VerticalAlignment="Top" Width="245" SelectionChanged="listView_SelectionChanged">
             <ListView.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
