@@ -159,8 +159,6 @@ D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.WindowsPhone\obj\x
 D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.WindowsPhone\obj\x86\Debug\RegisterPage.g.cs
 D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.WindowsPhone\obj\x86\Debug\RemoveUserPage.g.i.cs
 D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.WindowsPhone\obj\x86\Debug\RemoveUserPage.g.cs
-D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.WindowsPhone\obj\x86\Debug\UnitsPage.g.i.cs
-D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.WindowsPhone\obj\x86\Debug\UnitsPage.g.cs
 D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.WindowsPhone\obj\x86\Debug\UnitsPage1.g.i.cs
 D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.WindowsPhone\obj\x86\Debug\UnitsPage1.g.cs
 D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.WindowsPhone\obj\x86\Debug\ViewAppliances.g.i.cs
@@ -178,7 +176,6 @@ D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.WindowsPhone\obj\x
 D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.WindowsPhone\obj\x86\Debug\HistoryPage.xaml
 D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.WindowsPhone\obj\x86\Debug\RegisterPage.xaml
 D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.WindowsPhone\obj\x86\Debug\RemoveUserPage.xaml
-D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.WindowsPhone\obj\x86\Debug\UnitsPage.xaml
 D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.WindowsPhone\obj\x86\Debug\ViewAppliances.xaml
 D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.WindowsPhone\obj\x86\Debug\ViewPage.xaml
 D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.WindowsPhone\obj\x86\Debug\WelcomePage.xaml
@@ -190,7 +187,6 @@ D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.WindowsPhone\obj\x
 D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.WindowsPhone\obj\x86\Debug\HistoryPage.xbf
 D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.WindowsPhone\obj\x86\Debug\RegisterPage.xbf
 D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.WindowsPhone\obj\x86\Debug\RemoveUserPage.xbf
-D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.WindowsPhone\obj\x86\Debug\UnitsPage.xbf
 D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.WindowsPhone\obj\x86\Debug\ViewAppliances.xbf
 D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.WindowsPhone\obj\x86\Debug\ViewPage.xbf
 D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.WindowsPhone\obj\x86\Debug\WelcomePage.xbf
@@ -211,7 +207,6 @@ D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.WindowsPhone\bin\x
 D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.WindowsPhone\bin\x86\Debug\MainPage1.xbf
 D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.WindowsPhone\bin\x86\Debug\RegisterPage.xbf
 D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.WindowsPhone\bin\x86\Debug\RemoveUserPage.xbf
-D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.WindowsPhone\bin\x86\Debug\UnitsPage.xbf
 D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.WindowsPhone\bin\x86\Debug\UnitsPage1.xbf
 D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.WindowsPhone\bin\x86\Debug\ViewAppliances.xbf
 D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.WindowsPhone\bin\x86\Debug\ViewPage.xbf

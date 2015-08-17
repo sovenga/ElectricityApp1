@@ -124,8 +124,8 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Width" />
       <RootProperty Name="Background" />
-      <RootProperty Name="Items" />
       <RootProperty Name="FontSize" />
+      <RootProperty Name="Items" />
       <RootEvent Name="SelectionChanged" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Documents.Run">
@@ -162,7 +162,6 @@
     <RootType FullName="ElectricityApp.MainPage1" />
     <RootType FullName="ElectricityApp.RegisterPage" />
     <RootType FullName="ElectricityApp.RemoveUserPage" />
-    <RootType FullName="ElectricityApp.UnitsPage" />
     <RootType FullName="ElectricityApp.UnitsPage1" />
     <RootType FullName="ElectricityApp.ViewAppliances" />
     <RootType FullName="Windows.UI.Xaml.Controls.ListBox">

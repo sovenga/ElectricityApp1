@@ -287,7 +287,7 @@ namespace ElectricityApp
 
         private void HyperlinkButton_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(UnitsPage));
+            this.Frame.Navigate(typeof(UnitsPage1));
         }
 
         private void listView_SelectionChanged(object sender, SelectionChangedEventArgs e)

@@ -116,9 +116,6 @@
     <AppxPackagedFile Include="D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.Windows\bin\x86\Debug\RemoveUserPage.xbf">
       <PackagePath>RemoveUserPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.Windows\bin\x86\Debug\UnitsPage.xbf">
-      <PackagePath>UnitsPage.xbf</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.Windows\bin\x86\Debug\UnitsPage1.xbf">
       <PackagePath>UnitsPage1.xbf</PackagePath>
     </AppxPackagedFile>

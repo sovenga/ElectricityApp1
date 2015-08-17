@@ -288,8 +288,15 @@ namespace ElectricityApp
                 lblRemainingUnits.Text = "You have " + REMAINING_UNITS + " Units Remaining";
                 meterView.updateMeterBoxUnits(total_units);
                 txtCurrentUnits.Text = "" + REMAINING_UNITS;
-
-                messageBox("Total consumed Units for selected appliances is : " + total_units + " units");
+                if (total_units > CURRENT_UNITS)
+                {
+                    messageBox("You have exceeded the current units in your meter box ");
+                    this.Frame.Navigate(typeof(UnitsPage1));
+                }
+                else {
+                    messageBox("Total consumed Units for selected appliances is : " + total_units + " units");
+                }
+                
             }
             catch (Exception ex)
             {
@@ -477,6 +484,11 @@ namespace ElectricityApp
       
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(WelcomePage));
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(WelcomePage));
         }

@@ -61,7 +61,7 @@
                     </LinearGradientBrush>
                 </Button.Foreground>
             </Button>
-            <Button x:ConnectionId='2' x:Name="btnBack" Content="BACK" HorizontalAlignment="Left" Margin="0,-10,0,0" VerticalAlignment="Top"                      Width="50" Height="47"/>
+            <Button x:ConnectionId='2' x:Name="btnBack" Content="BACK" HorizontalAlignment="Left" Margin="0,-10,0,0" VerticalAlignment="Top"                      Width="95" Height="47"/>
             <TextBlock HorizontalAlignment="Left" Margin="70,108,0,0" TextWrapping="Wrap" Text="Remove Your Account??" VerticalAlignment="Top" FontSize="20" Width="232" FontWeight="Bold" Foreground="#FF111010"/>
             <TextBlock x:Name="lblDeleted" HorizontalAlignment="Left" Margin="158,81,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="369" Height="51" FontSize="24" FontWeight="Bold" Foreground="#FFF50808"/>
         </Grid>

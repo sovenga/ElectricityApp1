@@ -43,7 +43,7 @@ namespace ElectricityApp
                     double currentUnits = Convert.ToDouble(txtCurrentUnits.Text);
                     meterModel.addMeterBox(meterNumber, currentUnits);
                     //messageBox("Meter Added Successfully");
-                    this.Frame.Navigate(typeof(UnitsPage));
+                    this.Frame.Navigate(typeof(UnitsPage1));
                 }
                 else
                 {
