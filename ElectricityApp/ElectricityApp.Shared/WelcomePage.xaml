@@ -24,7 +24,7 @@
             <HyperlinkButton x:Name="linkLogout" Content="LOGOUT" HorizontalAlignment="Left" Margin="45,284,0,0" VerticalAlignment="Top" FontSize="22" Click="linkLogout_Click" FontWeight="Bold"/>
             <HyperlinkButton x:Name="linkremoveaccount" Content="REMOVE ACCOUNT" HorizontalAlignment="Left" Margin="45,210,0,0" VerticalAlignment="Top" FontSize="22" Click="linkremoveaccount_Click" FontWeight="Bold"/>
             <HyperlinkButton x:Name="linkDropTable" Content="REMOVE ALL APPLIANCES" HorizontalAlignment="Left" Margin="45,247,0,0" VerticalAlignment="Top" FontSize="22" Click="linkDropTable_Click" FontWeight="Bold"/>
-            <HyperlinkButton Content="ADD APPLIANCES" HorizontalAlignment="Left" Margin="45,173,0,0" VerticalAlignment="Top" FontSize="22" Click="HyperlinkButton_Click" FontWeight="Bold"/>
+            <HyperlinkButton x:Name="linkAddAppliances" Content="ADD APPLIANCES" HorizontalAlignment="Left" Margin="45,173,0,0" VerticalAlignment="Top" FontSize="22" Click="HyperlinkButton_Click" FontWeight="Bold"/>
             <HyperlinkButton x:Name="linkAddMeter" Content="ADD METER BOX" HorizontalAlignment="Left" Margin="45,104,0,0" VerticalAlignment="Top" FontSize="22" Click="linkAddMeter_Click" FontWeight="Bold"/>
             <TextBlock HorizontalAlignment="Left" Margin="0,10,0,0" TextWrapping="Wrap" Text="ELECTRICITY UNITS CALCULATOR" VerticalAlignment="Top" FontSize="22" Width="349" FontWeight="Bold"/>
         </Grid>

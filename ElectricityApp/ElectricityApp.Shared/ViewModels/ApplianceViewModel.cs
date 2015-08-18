@@ -112,6 +112,22 @@ namespace ElectricityApp.ViewModels
             
             }
         }
+        public void deleteEachAppliance(string name)
+        {
+            using (var db = new SQLite.SQLiteConnection(app.DBPath))
+            {
+                var delete = db.Query<Appliance>("delete from appliance where applianceName = '" + name + "'");
+                if (db.Delete(delete) > 0)
+                {
+
+                }
+                else
+                {
+
+                }
+
+            }
+        }
         public void deleteAllUsers()
         {
             using (var db = new SQLite.SQLiteConnection(app.DBPath))

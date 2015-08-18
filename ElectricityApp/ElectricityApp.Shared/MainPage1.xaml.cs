@@ -114,15 +114,7 @@ namespace ElectricityApp
                 messageBox("Invalid Credentials Entered");
             }//LoadStateEventArgs
         }
-        /*private void NavigationHelper_LoadState(object sender, LoadStateEventArgs e)
-        {
-            Employee emp = e.NavigationParameter as Employee;
-            if (emp != null)
-            {
-                txtName.Text = emp.Name;
-                txtID.Text = emp.ID.ToString();
-            }
-        }*/
+       
 
         private void HyperlinkButton_Click_3(object sender, RoutedEventArgs e)
         {

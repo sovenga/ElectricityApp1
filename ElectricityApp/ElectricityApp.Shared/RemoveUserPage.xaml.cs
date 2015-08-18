@@ -73,7 +73,7 @@ namespace ElectricityApp
 
                             this.Frame.Navigate(typeof(MainPage1));
                         }
-                    else if(user.verify(username) == null)
+                       else if(user.verify(username) == null)
                         { 
                             lblDeleted.Text = "Username not found";
                         }
@@ -95,6 +95,15 @@ namespace ElectricityApp
         private void btnClear_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(RemoveUserPage));
+        }
+
+        private async void btnRemove_Click(object sender, RoutedEventArgs e)
+        {
+            var dialog = new MessageDialog("Remove your account?");
+            dialog.Commands.Add(new UICommand("Yes", new UICommandInvokedHandler(Commandhandler)));
+            dialog.Commands.Add(new UICommand("No", new UICommandInvokedHandler(Commandhandler)));
+
+            await dialog.ShowAsync();
         }
     }
 }

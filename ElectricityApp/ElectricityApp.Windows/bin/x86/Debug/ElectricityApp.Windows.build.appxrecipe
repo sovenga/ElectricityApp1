@@ -113,6 +113,9 @@
     <AppxPackagedFile Include="D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.Windows\bin\x86\Debug\RegisterPage.xbf">
       <PackagePath>RegisterPage.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.Windows\bin\x86\Debug\RemoveAppliancePage.xbf">
+      <PackagePath>RemoveAppliancePage.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.Windows\bin\x86\Debug\RemoveUserPage.xbf">
       <PackagePath>RemoveUserPage.xbf</PackagePath>
     </AppxPackagedFile>

@@ -325,3 +325,8 @@ D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.Windows\obj\x86\De
 D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.Windows\obj\x86\Debug\qualifiers.txt.intermediate
 D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.Windows\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.Windows\obj\x86\Debug\ProjectArchitectures.txt
+D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.Windows\bin\x86\Debug\RemoveAppliancePage.xbf
+D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.Windows\obj\x86\Debug\RemoveAppliancePage.g.i.cs
+D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.Windows\obj\x86\Debug\RemoveAppliancePage.g.cs
+D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.Windows\obj\x86\Debug\RemoveAppliancePage.xaml
+D:\Mod\Documents\ElectricityApp\ElectricityApp\ElectricityApp.Windows\obj\x86\Debug\RemoveAppliancePage.xbf

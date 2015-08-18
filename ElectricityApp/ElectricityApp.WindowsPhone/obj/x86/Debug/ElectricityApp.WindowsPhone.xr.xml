@@ -53,7 +53,6 @@
       <RootProperty Name="FontWeight" />
       <RootProperty Name="FontSize" />
       <RootProperty Name="RenderTransformOrigin" />
-      <RootProperty Name="Foreground" />
       <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
@@ -65,8 +64,8 @@
       <RootProperty Name="TextWrapping" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Width" />
-      <RootProperty Name="FontFamily" />
       <RootProperty Name="Height" />
+      <RootProperty Name="FontFamily" />
       <RootProperty Name="RenderTransformOrigin" />
       <RootProperty Name="RenderTransform" />
       <RootProperty Name="UseLayoutRounding" />
@@ -74,15 +73,7 @@
       <RootProperty Name="Background" />
       <RootEvent Name="TextChanged" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Media.LinearGradientBrush">
-      <RootProperty Name="EndPoint" />
-      <RootProperty Name="StartPoint" />
-      <RootProperty Name="GradientStops" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Media.GradientStop">
-      <RootProperty Name="Color" />
-      <RootProperty Name="Offset" />
-    </RootType>
+    <RootType FullName="Microsoft.Xaml.Tools.DirectUI.ProxyTypes.NullExtension" />
     <RootType FullName="ElectricityApp.AddAppliancePage" />
     <RootType FullName="Windows.UI.Xaml.Controls.Image">
       <RootProperty Name="HorizontalAlignment" />
@@ -128,6 +119,15 @@
       <RootProperty Name="Items" />
       <RootEvent Name="SelectionChanged" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.LinearGradientBrush">
+      <RootProperty Name="EndPoint" />
+      <RootProperty Name="StartPoint" />
+      <RootProperty Name="GradientStops" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.GradientStop">
+      <RootProperty Name="Color" />
+      <RootProperty Name="Offset" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Documents.Run">
       <RootProperty Name="Text" />
       <RootProperty Name="FontWeight" />
@@ -149,7 +149,6 @@
       <RootProperty Name="Width" />
     </RootType>
     <RootType FullName="ElectricityApp.CheckUnitsPage" />
-    <RootType FullName="Microsoft.Xaml.Tools.DirectUI.ProxyTypes.NullExtension" />
     <RootType FullName="ElectricityApp.ForgotPasswordPage" />
     <RootType FullName="ElectricityApp.HistoryPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.PasswordBox">
@@ -161,6 +160,7 @@
     </RootType>
     <RootType FullName="ElectricityApp.MainPage1" />
     <RootType FullName="ElectricityApp.RegisterPage" />
+    <RootType FullName="ElectricityApp.RemoveAppliancePage" />
     <RootType FullName="ElectricityApp.RemoveUserPage" />
     <RootType FullName="ElectricityApp.UnitsPage1" />
     <RootType FullName="ElectricityApp.ViewAppliances" />

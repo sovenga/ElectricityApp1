@@ -64,7 +64,7 @@
 
         </ListView>
         <TextBlock HorizontalAlignment="Center" Margin="585,82,486,0" TextWrapping="Wrap" Text="ELECTRICITY UNITS CALCULATOR" VerticalAlignment="Top" Width="295" FontSize="18" FontWeight="Bold"/>
-        <Button Content="BACK" HorizontalAlignment="Left" Margin="10,25,0,0" VerticalAlignment="Top" Width="145" Click="Button_Click_2" Height="79"/>
+        <Button Content="BACK" HorizontalAlignment="Left" Margin="10,25,0,0" VerticalAlignment="Top" Width="145" Click="Button_Click_2" Height="59"/>
 
     </Grid>
 </Page>

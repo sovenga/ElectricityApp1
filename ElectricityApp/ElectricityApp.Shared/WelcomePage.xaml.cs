@@ -1,4 +1,5 @@
 ﻿
+using ElectricityApp.model;
 using ElectricityApp.ViewModels;
 using System;
 using System.Collections.Generic;
@@ -25,12 +26,23 @@ namespace ElectricityApp
     /// </summary>
     public sealed partial class WelcomePage : Page
     {
+        MeterViewModel meterView = new MeterViewModel();
         ApplianceViewModel appliance = null;
         public WelcomePage()
         {
             this.InitializeComponent();
         }
-
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            MeterBox unitObject = meterView.getMeterUnits();
+            //double current = unitObject.currentUnits;
+            if (unitObject == null)
+            {
+                linkAddAppliances.IsEnabled = false;
+                messageBox("You have to add a meter box first");
+            }
+            base.OnNavigatedTo(e);
+        }
         private void HyperlinkButton_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(AddAppliancePage));
@@ -66,11 +78,16 @@ namespace ElectricityApp
         private async void linkDropTable_Click(object sender, RoutedEventArgs e)
         {
             var dialog = new MessageDialog("All appliances will be deleted, Continue?");
+    
+            #if WINDOWS_PHONE_APP
             dialog.Commands.Add(new UICommand("Yes", new UICommandInvokedHandler(DropAppliancesCommandhandler)));
-            dialog.Commands.Add(new UICommand("No", new UICommandInvokedHandler(DropAppliancesCommandhandler)));
-            await dialog.ShowAsync();
+            dialog.Commands.Add(new UICommand("Cancel", new UICommandInvokedHandler(DropAppliancesCommandhandler)));
+            #else
+            dialog.Commands.Add(new UICommand("Delete Each", new UICommandInvokedHandler(DropAppliancesCommandhandler)));
+           
+            #endif 
             
-            //messageBox("Table Removed");
+            await dialog.ShowAsync();
         }
 
         private void linkremoveaccount_Click(object sender, RoutedEventArgs e)
@@ -133,8 +150,11 @@ namespace ElectricityApp
                         //messageBox("error " + ex.Message);
                     }
                     break;
-                case "No":
+                case "Calcel":
                     break;
+                case "Delete Each":
+                    
+                    break;//this.Frame.Navigate(typeof(RemoveAppliancePage));
 
             }
         }

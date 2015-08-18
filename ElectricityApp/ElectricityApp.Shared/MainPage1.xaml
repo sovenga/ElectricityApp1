@@ -16,12 +16,12 @@
             <TextBlock HorizontalAlignment="Left" Margin="11,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" SelectionChanged="TextBlock_SelectionChanged" RenderTransformOrigin="0.51,2.619" Width="129" Foreground="White" Height="36">
         		<Run FontWeight="Bold" FontSize="22" Text="Username"/>
             </TextBlock>
-            <TextBox x:Name="txtUsername" HorizontalAlignment="Left" Margin="11,49,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" Height="41"/>
+            <TextBox x:Name="txtUsername" HorizontalAlignment="Left" Margin="11,49,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="257" Height="41"/>
             <TextBlock HorizontalAlignment="Left" Margin="10,100,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" FontSize="20" SelectionChanged="TextBlock_SelectionChanged" RenderTransformOrigin="0.51,2.619" FontWeight="Bold" Width="153" Foreground="White" Height="30"/>
-            <PasswordBox x:Name="txtPassword" HorizontalAlignment="Left" Margin="10,130,0,0" VerticalAlignment="Top" Width="234" Height="40"/>
-            <HyperlinkButton x:Name="linkForgotpassword" Content="Forgot Password" HorizontalAlignment="Left" Margin="10,250,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.66,0.627" Click="HyperlinkButton_Click_1" Foreground="White" Background="#FFD40F0F" FontSize="14" Width="230" Height="55"/>
-            <HyperlinkButton x:Name="linkRegister" Content="Register" HorizontalAlignment="Left" Margin="0,182,0,0" VerticalAlignment="Top" Click="HyperlinkButton_Click" Foreground="White" Width="140" FontWeight="Bold" Height="43"/>
-            <Button x:Name="btnLoginButton" Content="Login" HorizontalAlignment="Left" Margin="135,177,0,0" VerticalAlignment="Top" Width="118" Click="btnLoginButton_Click" Height="63"/>
+            <PasswordBox x:Name="txtPassword" HorizontalAlignment="Left" Margin="10,130,0,0" VerticalAlignment="Top" Width="253" Height="40"/>
+            <HyperlinkButton x:Name="linkForgotpassword" Content="Forgot Password" HorizontalAlignment="Left" Margin="10,250,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.66,0.627" Click="HyperlinkButton_Click_1" Foreground="White" Background="#FFD40F0F" FontSize="14" Width="248" Height="55"/>
+            <HyperlinkButton x:Name="linkRegister" Content="Register" HorizontalAlignment="Left" Margin="0,182,0,0" VerticalAlignment="Top" Click="HyperlinkButton_Click" Foreground="White" Width="140" FontWeight="Bold" Height="61"/>
+            <Button x:Name="btnLoginButton" Content="Login" HorizontalAlignment="Left" Margin="153,177,0,0" VerticalAlignment="Top" Width="100" Click="btnLoginButton_Click" Height="63"/>
         </Grid>
 
     </Grid>

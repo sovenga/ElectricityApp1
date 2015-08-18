@@ -63,5 +63,22 @@ namespace ElectricityApp
             var msgDlg = new Windows.UI.Popups.MessageDialog(msg);
             await msgDlg.ShowAsync();
         }
+
+        private void btnSub_Click(object sender, RoutedEventArgs e)
+        {
+            string username = txtUserName.Text;
+            user = new UserViewModel();
+            User userObject = user.getPassowrd(username);
+            if (userObject != null)
+            {
+                lblPassword.Text = "Your Password Is " + userObject.PASSWORD;
+                messageBox("Success!!! " + userObject.PASSWORD + " Will always be returned as long as you remember your username");
+                txtUserName.Text = "";
+            }
+            else
+            {
+                messageBox("Sorry!!!Password for " + username + " cannot be found");
+            }
+        }
     }
 }
