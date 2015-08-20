@@ -11,9 +11,9 @@
         <Grid.Background>
             <ImageBrush Stretch="Fill" ImageSource="Assets/image8.JPG"/>
         </Grid.Background>
-        <ListView x:Name="listViewHistory" HorizontalAlignment="Center" Height="515" Margin="5,58,5,0" VerticalAlignment="Top" Width="390" SelectionMode="None" FontSize="10"/>
-        <Button Content="BACK" HorizontalAlignment="Left" Margin="24,7,0,0" VerticalAlignment="Top" Click="Button_Click"/>
-        <Button x:Name="btnClearHistory" Content="CLEAR HISTORY" HorizontalAlignment="Left" Margin="215,584,0,-2" VerticalAlignment="Top" Width="174" Click="btnClearHistory_Click" Height="58"/>
+        <ListView x:Name="listViewHistory" HorizontalAlignment="Center" Height="465" Margin="5,108,5,0" VerticalAlignment="Top" Width="390" SelectionMode="None" FontSize="10"/>
+        <Button Content="BACK" HorizontalAlignment="Left" Margin="10,7,0,0" VerticalAlignment="Top" Click="Button_Click" Height="40" Width="123"/>
+        <Button x:Name="btnClearHistory" Content="CLEAR HISTORY" HorizontalAlignment="Center" Margin="216,580,0,0" VerticalAlignment="Top" Width="174" Click="btnClearHistory_Click" Height="53"/>
 
     </Grid>
 </Page>

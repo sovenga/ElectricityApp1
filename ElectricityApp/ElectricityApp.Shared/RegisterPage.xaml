@@ -26,7 +26,7 @@
                     <ImageBrush Stretch="Fill"/>
                 </Button.Background>
             </Button>
-            <Button x:Name="btnBack" Content="BACK" HorizontalAlignment="Left" Margin="-5,-201,0,0" VerticalAlignment="Top" Click="btnBack_Click" Width="75" Height="41">
+            <Button x:Name="btnBack" Content="BACK" HorizontalAlignment="Left" Margin="-5,-201,0,0" VerticalAlignment="Top" Click="btnBack_Click" Width="120" Height="36">
                 <Button.Background>
                     <ImageBrush Stretch="Fill"/>
                 </Button.Background>

@@ -11,7 +11,7 @@
         <Grid.Background>
             <ImageBrush Stretch="Fill" ImageSource="Assets/image8.JPG"/>
         </Grid.Background>
-        <ListView x:Name="mainListView"  SelectionMode="None" HorizontalAlignment="Center" Height="672" Margin="10,83,-5,-88" VerticalAlignment="Top" Width="395">
+        <ListView x:Name="mainListView"  SelectionMode="None" HorizontalAlignment="Center" Height="750" Margin="10,80,-5,-163" VerticalAlignment="Top" Width="395">
 
             <Grid Height="610" Width="380">
                 <Grid HorizontalAlignment="Left" Height="705" Margin="0,11,-916,-106" VerticalAlignment="Top" Width="1296">
@@ -43,7 +43,7 @@
                         <TextBox x:Name="txtAppliance5Hours" HorizontalAlignment="Left" Margin="68.333,195,-0.833,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="60" Grid.Column="1"/>
                         <Button x:Name="btnCalculate" Content="CALCULATE UNITS" HorizontalAlignment="Left" Margin="45,232,0,-2" VerticalAlignment="Top" Click="btnCalculate_Click" Width="131" FontWeight="Normal" Height="50" FontSize="11" Grid.ColumnSpan="2"/>
                         <TextBlock HorizontalAlignment="Left" Margin="5,5,0,0" TextWrapping="Wrap" Text="Appliance Name" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="113" FontSize="11"/>
-                        <TextBlock HorizontalAlignment="Left" Margin="36,5,-31,0" TextWrapping="Wrap" Text="Hours Used" VerticalAlignment="Top" Width="122" Grid.Column="1" FontSize="11"/>
+                        <TextBlock HorizontalAlignment="Left" Margin="60.667,5,0,0" TextWrapping="Wrap" Text="Hours Used" VerticalAlignment="Top" Width="66" Grid.Column="1" FontSize="11"/>
                     </Grid>
                     <TextBlock HorizontalAlignment="Left" Margin="10,451,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" Height="50" Width="364" Grid.ColumnSpan="3" FontFamily="SimSun-ExtB" Foreground="#FFF70606">
                     	<Run Text="Please Note that you can "/>
@@ -54,9 +54,9 @@
                     <Button x:Name="btnHistory" Content="View History" HorizontalAlignment="Left" Margin="170,386,0,0" VerticalAlignment="Top" Width="135" Click="btnHistory_Click_1" Grid.ColumnSpan="3"/>
                     <HyperlinkButton Content="Start Over" HorizontalAlignment="Left" Margin="10,357,0,0" VerticalAlignment="Top" Width="165" Height="42" Click="HyperlinkButton_Click_1" Grid.Column="1" FontWeight="Bold" Grid.ColumnSpan="2" Foreground="#FFF5F3F7" FontStyle="Italic" FontSize="16"/>
                     <TextBlock x:Name="lblUsername" HorizontalAlignment="Left" Margin="125,-59,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="16" Width="245" FontWeight="Bold" Height="45" Grid.ColumnSpan="3"/>
-                    <TextBlock HorizontalAlignment="Left" Margin="98,24,0,0" TextWrapping="Wrap" Text="CURRENT UNITS" VerticalAlignment="Top" Width="90" FontSize="11"/>
-                    <TextBox x:Name="txtCurrentUnits" HorizontalAlignment="Left" Margin="191,12,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="127" Height="14" Grid.ColumnSpan="3"/>
-                    <TextBlock HorizontalAlignment="Left" Margin="48,19,0,0" TextWrapping="Wrap" Text="UNITS" VerticalAlignment="Top" Grid.Column="2"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="95,14,0,0" TextWrapping="Wrap" Text="CURRENT UNITS" VerticalAlignment="Top" Width="90" FontSize="11"/>
+                    <TextBox x:Name="txtCurrentUnits" HorizontalAlignment="Left" Margin="190,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="127" Height="14" Grid.ColumnSpan="3"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="45,14,0,0" TextWrapping="Wrap" Text="UNITS" VerticalAlignment="Top" Grid.Column="2"/>
                     <TextBlock x:Name="lblRemainingUnits" HorizontalAlignment="Left" Margin="10,496,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="55" Width="355" Grid.ColumnSpan="3"/>
                     <TextBlock HorizontalAlignment="Left" Margin="6,49,0,0" TextWrapping="Wrap" Text="My Appliances" VerticalAlignment="Top" FontWeight="Bold" FontStyle="Italic" FontSize="18"/>
                 </Grid>

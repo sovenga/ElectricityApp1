@@ -79,13 +79,13 @@ namespace ElectricityApp
         {
             var dialog = new MessageDialog("All appliances will be deleted, Continue?");
     
-            #if WINDOWS_PHONE_APP
+            
             dialog.Commands.Add(new UICommand("Yes", new UICommandInvokedHandler(DropAppliancesCommandhandler)));
             dialog.Commands.Add(new UICommand("Cancel", new UICommandInvokedHandler(DropAppliancesCommandhandler)));
-            #else
-            dialog.Commands.Add(new UICommand("Delete Each", new UICommandInvokedHandler(DropAppliancesCommandhandler)));
+          
+            //dialog.Commands.Add(new UICommand("Delete Each", new UICommandInvokedHandler(DropAppliancesCommandhandler)));
            
-            #endif 
+            
             
             await dialog.ShowAsync();
         }
@@ -152,9 +152,7 @@ namespace ElectricityApp
                     break;
                 case "Calcel":
                     break;
-                case "Delete Each":
-                    
-                    break;//this.Frame.Navigate(typeof(RemoveAppliancePage));
+                
 
             }
         }
