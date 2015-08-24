@@ -80,5 +80,18 @@ namespace ElectricityApp
            
 
         }
+
+        private void btnRemove_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                meterModel.removeMeters();
+                messageBox("You have deleted your meter box");
+            }
+            catch
+            {
+                messageBox("Error ocuured while deleting");
+            }
+        }
     }
 }

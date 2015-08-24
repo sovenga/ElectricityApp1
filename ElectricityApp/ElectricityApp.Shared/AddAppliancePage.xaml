@@ -19,14 +19,14 @@
             <TextBlock HorizontalAlignment="Left" Margin="99,-18,0,0" TextWrapping="Wrap" Text="ADD APPLIANCE" VerticalAlignment="Top" FontSize="20" Width="187" FontStyle="Italic" FontWeight="Bold" Grid.ColumnSpan="2"/>
             <TextBlock HorizontalAlignment="Left" Margin="8,138,0,0" TextWrapping="Wrap" Text="APPLIANCE NAME" VerticalAlignment="Top" FontSize="14"  RenderTransformOrigin="0.51,2.619"/>
             <TextBlock HorizontalAlignment="Left" Margin="8,193,0,0" TextWrapping="Wrap" Text="WATTS" VerticalAlignment="Top" FontSize="14"  RenderTransformOrigin="0.51,2.619"/>
-            <TextBox x:Name="txtApplianceName" HorizontalAlignment="Left" Margin="130,125,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="168" Grid.ColumnSpan="2" Height="19" />
-            <TextBox x:Name="txtWatts" HorizontalAlignment="Left" Margin="128,181,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="170" Grid.ColumnSpan="2" Height="25" />
-            <Button x:Name="btnAddAppliance" Content="ADD APPLIANCE" HorizontalAlignment="Left" Margin="138,270,0,0" VerticalAlignment="Top" Width="166" Click="btnAddAppliance_Click" Height="63" Grid.ColumnSpan="2" Background="{x:Null}"/>
-            <TextBox x:Name="txtNumberOfItems" HorizontalAlignment="Left" Margin="233,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="66" Grid.ColumnSpan="2" Height="25"/>
+            <TextBox x:Name="txtApplianceName" HorizontalAlignment="Left" Margin="130,125,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="203" Grid.ColumnSpan="2" Height="19" />
+            <TextBox x:Name="txtWatts" HorizontalAlignment="Left" Margin="128,181,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="205" Grid.ColumnSpan="2" Height="25" />
+            <Button x:Name="btnAddAppliance" Content="ADD APPLIANCE" HorizontalAlignment="Left" Margin="183,270,0,0" VerticalAlignment="Top" Width="150" Click="btnAddAppliance_Click" Height="39" Background="{x:Null}" Grid.ColumnSpan="2" FontSize="16"/>
+            <TextBox x:Name="txtNumberOfItems" HorizontalAlignment="Left" Margin="233,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="101" Grid.ColumnSpan="2" Height="25"/>
             <TextBlock HorizontalAlignment="Left" Margin="8,235,0,0" TextWrapping="Wrap" Text="NUMBER OF ITEMS OF SAME TYPE" VerticalAlignment="Top" FontSize="14" RenderTransformOrigin="0.51,2.619"/>
         </Grid>
         <TextBlock x:Name="lblUsername" HorizontalAlignment="Left" Margin="240,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="16" Width="150" FontWeight="Bold" Height="38"/>
-        <Button x:Name="tblBack2" Content="BACK" HorizontalAlignment="Left" Margin="7,0,0,0" VerticalAlignment="Top" Height="56" Click="tblBack2_Click" Width="70"/>
+        <Button x:Name="tblBack2" Content="BACK" HorizontalAlignment="Left" Margin="7,0,0,0" VerticalAlignment="Top" Height="56" Click="tblBack2_Click" Width="70" FontSize="16"/>
 
     </Grid>
 </Page>

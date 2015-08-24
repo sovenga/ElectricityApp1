@@ -73,16 +73,19 @@ namespace ElectricityApp
         {
             //MeterBox box = null; 
             //txtAppliance1Hours.IsEnabled = true;
+
             this.calculatorGrid.Visibility = Visibility.Collapsed;
             appliancesModel = new AppliancesViewModel();
             try
             {
                 MeterBox unitObject = meterView.getMeterUnits();
+                
                 appliances = appliancesModel.getAllAppliances();
                 if (appliances != null)
                 {
                     if (unitObject != null)
                     {
+                        
                         txtCurrentUnits.Text = "" + unitObject.currentUnits;
                         lblUsername.Text = unitObject.meterBoxNumber;
                         foreach (var ap in appliances)
@@ -92,6 +95,7 @@ namespace ElectricityApp
                     }
                     else
                     {
+                        btnContinue.IsEnabled = false;
                         messageBox("No Meter Box added, please add your meter box before");
                     }
 

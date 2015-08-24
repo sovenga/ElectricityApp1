@@ -120,5 +120,10 @@ namespace ElectricityApp
         {
             this.Frame.Navigate(typeof(CalculatorPage));
         }
+
+        private void btnRegister_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(RegisterPage));
+        }
     }
 }
