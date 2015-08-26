@@ -16,17 +16,17 @@
                 <ColumnDefinition Width="25*"/>
                 <ColumnDefinition Width="13*"/>
             </Grid.ColumnDefinitions>
-            <TextBlock x:ConnectionId='1' HorizontalAlignment="Left" Margin="75,-147,0,0" TextWrapping="Wrap" Text="ELECTRICITY UNITS CALCULATOR" VerticalAlignment="Top" FontSize="16" Width="255" FontWeight="Bold"                                               Grid.ColumnSpan="2" Height="35" Foreground="#FFF3F0F0"/>
+            <TextBlock x:ConnectionId='1' HorizontalAlignment="Left" Margin="70,-90,0,0" TextWrapping="Wrap" Text="ELECTRICITY UNITS CALCULATOR" VerticalAlignment="Top" FontSize="16" Width="255" FontWeight="Bold"                                               Grid.ColumnSpan="2" Height="35" Foreground="#FFF3F0F0"/>
             <TextBlock HorizontalAlignment="Left" Margin="0,56,0,0" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top" FontSize="22" Foreground="White" FontWeight="Bold" Width="106"/>
             <TextBlock HorizontalAlignment="Left" Margin="0,105,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" FontSize="22" Foreground="White" FontWeight="Bold" Width="99"/>
             <TextBlock HorizontalAlignment="Left" Margin="0,150,0,0" TextWrapping="Wrap" Text="Confirm" VerticalAlignment="Top" FontSize="22" Foreground="White" FontWeight="Bold" Width="86"/>
             <TextBox x:Name="txtUserName" HorizontalAlignment="Left" Margin="140,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.251,0.019" Width="220" Grid.ColumnSpan="2" Height="10"/>
-            <Button x:ConnectionId='2' x:Name="btnRegister" Content="REGISTER" HorizontalAlignment="Left" Margin="200,194,0,0" VerticalAlignment="Top"                           Width="150" Grid.ColumnSpan="2">
+            <Button x:ConnectionId='2' x:Name="btnRegister" Content="REGISTER" HorizontalAlignment="Left" Margin="175,194,0,0" VerticalAlignment="Top"                           Width="149" Grid.ColumnSpan="2" FontSize="16">
                 <Button.Background>
                     <ImageBrush Stretch="Fill"/>
                 </Button.Background>
             </Button>
-            <Button x:ConnectionId='3' x:Name="btnBack" Content="BACK" HorizontalAlignment="Left" Margin="-5,-201,0,0" VerticalAlignment="Top"                       Width="120" Height="36">
+            <Button x:ConnectionId='3' x:Name="btnBack" Content="BACK" HorizontalAlignment="Left" Margin="-5,-201,0,0" VerticalAlignment="Top"                       Width="140" Height="36" FontSize="16">
                 <Button.Background>
                     <ImageBrush Stretch="Fill"/>
                 </Button.Background>

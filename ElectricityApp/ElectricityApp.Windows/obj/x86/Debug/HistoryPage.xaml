@@ -11,7 +11,11 @@
         <Grid.Background>
             <ImageBrush Stretch="Fill" ImageSource="Assets/image8.JPG"/>
         </Grid.Background>
-        <ListView x:Name="listViewHistory" HorizontalAlignment="Center" Height="515" Margin="5,58,5,0" VerticalAlignment="Top" Width="390" SelectionMode="None" FontSize="10"/>
+        <ListView x:Name="listViewHistory" HorizontalAlignment="Center" Height="465" Margin="5,108,5,0" VerticalAlignment="Top" Width="390" SelectionMode="None" FontSize="24" FontWeight="Bold">
+            <ListView.Background>
+                <ImageBrush Stretch="Fill"/>
+            </ListView.Background>
+        </ListView>
         <Button x:ConnectionId='1' Content="BACK" HorizontalAlignment="Left" Margin="10,7,0,0" VerticalAlignment="Top"                      Height="40" Width="123"/>
         <Button x:ConnectionId='2' x:Name="btnClearHistory" Content="CLEAR HISTORY" HorizontalAlignment="Center" Margin="216,580,0,0" VerticalAlignment="Top" Width="174"                               Height="53"/>
 

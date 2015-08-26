@@ -38,7 +38,9 @@ namespace ElectricityApp
             //double current = unitObject.currentUnits;
             if (unitObject == null)
             {
+                lblMessage.Text = "Meter Box must be added first to add appliances,\n and to check calculate units";
                 linkAddAppliances.IsEnabled = false;
+                linkCheckButton.IsEnabled = false;
                 messageBox("You have to add a meter box first");
             }
             base.OnNavigatedTo(e);
@@ -105,6 +107,7 @@ namespace ElectricityApp
 
         private void HyperlinkButton_Click_2(object sender, RoutedEventArgs e)
         {
+
             this.Frame.Navigate(typeof(UnitsPage1));
         }
         private void Commandhandler(IUICommand cmd)
